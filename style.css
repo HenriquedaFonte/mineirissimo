@@ -15,14 +15,16 @@
   --fc-hero-p: hsl(210, 9%, 31%);
   --fc-button: hsl(0, 0%, 100%);
 
-  --hue: 190;
+  --hue: 8;
   --bg-brand-light: hsl(calc(var(--hue) - 22), 23%, 89%);
   --bg-brand-button: hsl(var(--hue), 100%, 26%);
+  --bg-brand-nav: hsl(var(--hue), 45%, 60%);
   --bg-brand: hsl(39, 100%, 97%);
   --bg-brand-light-2: hsl(cal(var(--hue) + 10), 14%, 97%);
   --bg-white: hsl(0, 0%, 100%);
   --bg-brand-btnHover: hsl(var(--hue), 100%, 14%);
-  --bg-brand-btnHover2: hsl(173, 74%, 36%);
+  --bg-brand-btnHover2: hslhsl(173, 74%, 36%);
+  
 
   --nav-height: 7.2rem;
 }
@@ -47,6 +49,8 @@ body {
   overflow: overlay;
 
   background-color: var(--bg-brand-light-2);
+
+  
 }
 
 .wrapper {
@@ -61,6 +65,10 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+.logo img {
+  width: 10rem;
 }
 
 section {
@@ -147,11 +155,11 @@ body.menuExpanded #navigation .logo path,
   stroke: white;
 }
 
-/*========= NAVIGATION ========================================================*/
+/*========= NAVIGATION =====================================================*/
 
 nav {
   display: flex;
-
+  
   height: var(--nav-height);
 
   position: fixed;
@@ -159,6 +167,7 @@ nav {
   width: 100vw;
 
   z-index: 100;
+
 }
 
 nav .wrapper {
@@ -168,7 +177,7 @@ nav .wrapper {
 }
 
 nav.scroll {
-  background-color: var(--bg-brand-button);
+  background-color: var(--bg-brand-nav);
 }
 
 nav button {
@@ -182,7 +191,7 @@ nav .closeMenu {
   position: fixed;
 }
 
-/*========= MENU EXPANDED ================================================================*/
+/*========= MENU EXPANDED ==============================================*/
 
 body.menuExpanded {
   overflow: hidden;
@@ -214,7 +223,7 @@ body.menuExpanded .closeMenu {
 body.menuExpanded .menu {
   top: 0;
   left: 0;
-  background: var(--bg-brand-button);
+  background: var(--bg-brand-nav);
 
   width: 100vw;
   height: 100vh;
@@ -287,7 +296,7 @@ body.menuExpanded button path {
   stroke: white;
 }
 
-/*========= HOME ===============================================================*/
+/*========= HOME ===========================================================*/
 
 #home {
   padding-block: 0;
@@ -300,7 +309,7 @@ body.menuExpanded button path {
   height: calc(76% + var(--nav-height));
   background-color: var(--bg-brand-light);
   display: block;
-
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -309,6 +318,7 @@ body.menuExpanded button path {
 
 #home h4 {
   margin-bottom: 1.6rem;
+ 
 }
 
 #home h1 {
@@ -321,7 +331,7 @@ body.menuExpanded button path {
 
 #home .button {
   margin-inline: auto;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;  
 }
 
 #home .photo img {
@@ -336,6 +346,7 @@ body.menuExpanded button path {
 
   padding-block: 4rem;
   margin-inline: auto;
+  margin-top: 6rem;
 
   display: flex;
   flex-direction: column;
@@ -501,7 +512,7 @@ footer .socialLinks {
   justify-content: flex-start;
 }
 
-/*========= BACK TO TOP ========================================================*/
+/*========= BACK TO TOP =================================================*/
 
 #backToTopButton {
   position: fixed;
@@ -692,15 +703,23 @@ footer .socialLinks {
   /*========= HOME =======================================*/
 
   #home::before {
-    height: calc(96% - var(--nav-height));
+    height: calc(97% - var(--nav-height));
   }
 
   #home {
-    padding-top: var(--nav-height);
+    padding-top: var(3rem + --nav-height);
+  }
+
+  #home .photo img {
+    /* padding-top: 10rem;  */
+    width: 26.4rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 2rem;
   }
 
   #home .wrapper {
-    grid-template-columns: 60.5rem 1fr;
+    grid-template-columns: 55% 45%;
     grid-template-areas:
       'A B'
       'C C';

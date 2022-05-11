@@ -106,5 +106,6 @@ ScrollReveal({
 #about,
 #about header,
 #about .content`);
-© 2022 GitHub, Inc.
-Term
+
+
+
