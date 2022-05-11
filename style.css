@@ -502,8 +502,12 @@ body.menuExpanded button path {
 
 footer {
   padding-block: 6rem;
-  background-color: var(--bg-brand-button);
+  background-color: var(--bg-brand-nav);
   text-align: left;
+}
+
+footer img {
+  width: 25%;
 }
 
 /* #footer .wrapper header path {
