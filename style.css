@@ -159,6 +159,7 @@ body.menuExpanded #navigation .logo path,
 
 nav {
   display: flex;
+  padding-top: 1rem;
   
   height: var(--nav-height);
 
