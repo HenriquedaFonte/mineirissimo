@@ -455,6 +455,74 @@ body.menuExpanded button path {
 
 #about .content img {}
 
+/*========= INOVATIONS ========================================================*/
+
+#innovation {
+  background-color: var(--bg-white);
+  text-align: center;
+}
+
+#innovation header h4 {
+  margin-bottom: 1.6rem;
+}
+
+#innovation .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 10rem;
+}
+
+#innovation .col-b ,
+#innovation .col-c ,
+#innovation .col-d  {
+  position: relative;
+}
+
+#innovation .col-b p,
+#innovation .col-c p,
+#innovation .col-d p {
+  position: absolute;
+  bottom: 5.2rem;
+  left: 2.8rem;
+  border-radius: 2rem;
+  background-color: var(--bg-brand);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--bg-brand-button);
+  padding: 0 1.6rem;
+
+  width: fit-content;
+  height: 3.8rem;
+
+  display: inline-flex;
+  align-items: center;
+  
+}
+
+#innovation img {  
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+
+/*========= S ========================================================*/
+
+#events {
+  background-color: var(--bg-brand);
+  text-align: left;
+}
+
+#events header h4 {
+  margin-bottom: 1.6rem;
+}
+
+#events .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}
+
+#events .content img {}
+
 /*========= CONTACT ========================================================*/
 
 #contact {
@@ -805,20 +873,87 @@ footer .socialLinks {
   /*========= ABOUT =======================================*/
 
   #about .wrapper {
-    grid-template-columns: 48rem 1fr;
+    grid-template-columns: 40% 60%;
     grid-template-areas: 'B A';
     gap: 6.7rem;
   }
 
   #about .col-a {
     align-self: center;
-
   }
 
+  #about .col-b {
+    align-self: center;
+  }
+
+ 
   #about .content p {
     margin-bottom: 0;
   }
 
+  /*========= INNOVATION =======================================*/
+  
+
+#innovation .wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  'A A A'
+  'B C D';
+  gap: 1.7rem;
+}
+
+#innovation {
+  align-self: center;
+}
+#innovation .col-b p,
+#innovation .col-c p,
+#innovation .col-d p {
+  position: absolute;
+  bottom: 5.2rem;
+  left: 2.8rem;
+  border-radius: 2rem;
+  background-color: var(--bg-brand);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--bg-brand-button);
+  padding: 0 1.6rem;
+
+  width: fit-content;
+  height: 3.8rem;
+
+  display: inline-flex;
+  align-items: center;
+  
+}
+
+#innovation img {  
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+
+  /*========= EVENTS =======================================*/
+
+
+  #events .wrapper {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
+
+  #events .col-a {
+    align-self: center;
+  }
+
+  #events .col-b {
+    align-self: center;
+  }
+
+ 
+  #events .content p {
+    margin-bottom: 0;
+  }
   /*========= CONTACT =======================================*/
 
     #contact .wrapper {

@@ -8,6 +8,8 @@ function onScroll() {
   activateMenuAtCurrentSection(home);
   activateMenuAtCurrentSection(services);
   activateMenuAtCurrentSection(about);
+  activateMenuAtCurrentSection(innovation);
+  activateMenuAtCurrentSection(events);
   activateMenuAtCurrentSection(contact);
 }
 
@@ -105,7 +107,13 @@ ScrollReveal({
 #services .card
 #about,
 #about header,
-#about .content`);
+#about .content,
+#events,
+#events header,
+#events .content,
+#innovation,
+#innovation header,
+#innovation .content`);
 
 
 
