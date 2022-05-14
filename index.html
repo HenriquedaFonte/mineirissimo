@@ -9,7 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
   <link rel="stylesheet" href="./style.css">
+ 
 
   <title>Mineirissimo Recife</title>
 </head>
@@ -30,6 +33,9 @@
           </li>
           <li>
             <a onclick="closeMenu()" href="#about">Sobre</a>
+          </li>
+          <li>
+            <a onclick="closeMenu()" href="#testimonials">Depoimentos</a>
           </li>
           <li>
             <a onclick="closeMenu()" href="#innovation">Inovações</a>
@@ -99,9 +105,8 @@
           <h1>O legítimo sabor do pão de queijo</h1>
         </header>
         <div class="content">
-          <p>Bem-vindos ao Mineiríssimo! Novo point de pão de queijo da cidade!
-            Há mais de 10 anos fabricando o autêntico pão de queijo mineiro.
-            Venha conhecer! Você não vai se arrepender!
+          <p>Há mais de 10 anos fabricando o autêntico pão de queijo mineiro.
+            Venha conhecer, Você não vai se arrepender!
           </p>
           <a class="button" href="#contact">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,6 +146,24 @@
         <h4>produtos</h4>
         <h2>Apresentamos alguns de nossos produtos mais vendidos:</h2>
       </header>
+      <div class="principal">
+        <div class="col-a">
+          <header>
+            <h3>Nossa principal estrela, o pão de queijo!</h3>
+          </header>
+          <div class="content">
+            <p>A receita é um segredinho que nossas avós já sabiam. Manuseavam corretamente os ingredientes em porções
+              generosas que, levadas ao forno, recebiam o toque mágico da transformação. Retirados, já crescidos,
+              cheirosos e quentinhos, eram servidos com um delicioso café. O que procuramos fazer, é um resgate dessa
+              época. Um tempo que não faz tanto tempo assim. E o principal, fazemos com todo carinho,amor e alegria,
+              como nossas vovós nos ensinaram. Como <span>TODOS</span> os nossos produtos, nosso pão de queijo não leva
+              farinha e é <span>100% SEM GLÚTEM.</span></p>
+          </div>
+        </div>
+        <div class="col-b">
+          <img src="./img/Pão de queijo.jpg" alt="foto de pão de queijo do reino" />
+        </div>
+      </div>
       <div class="cards">
         <div class="card">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,8 +171,9 @@
             <path d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001" stroke="#00856F" stroke-width="1.5"
               stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          <h3>Pão de queijo</h3>
-          <p>Pão de queijo artesanal com ingredientes selecionados, disponível congelado e pré assado. </p>
+          <h3>Coxinha de frango</h3>
+          <p>Uma deliciosa coxinha de frango feita com a massa de pao de queijo, e o mais incrível, ASSADA, portanto uma
+            opção saudável. </p>
         </div>
         <div class="card">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,8 +218,9 @@
             <path d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001" stroke="#00856F" stroke-width="1.5"
               stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          <h3>Coxinha de frango</h3>
-          <p>Uma deliciosa coxinha de frango feita com a massa de pao de queijo.</p>
+          <h3>Crostata</h3>
+          <p>A crostata é a massa da pizza de pão de queijo, feita em formato de coração, pequeno, fininho e crocante,
+            para petisco fica perfeita com geleias doces. </p>
         </div>
       </div>
     </div>
@@ -208,18 +233,117 @@
           <h2>Entenda quem somos e por que existimos</h2>
         </header>
         <div class="content">
-          <p>Somos uma empresa artesanal de pão de queijo e temos uma variedade de outros produtos feitos, todos, a partir da massa do pão de queijo.
+          <p>Somos uma empresa artesanal de pão de queijo e temos uma variedade de outros produtos feitos, todos, a
+            partir da massa do pão de queijo.
             Nossas receitas não utilizam nenhum ingrediente químico ou produtos que realcem o sabor. E também, não
             utilizamos ovo em pó, pois consideramos de fundamental importância o efeito que somente o ovo in natura
             proporciona no resultado final.
             A cocção dos produtos pré-assados é feita de forma lenta e gradativa, deixando-os assim, macio por dentro e
             crocante por fora.<br>
             <br>
-            Existimos como uma alternativa para aqueles que estão saturados do mercado de pão de queijo industrializado e que buscam um sabor verdadeiro com uma receita caseira.</p>
+            Existimos como uma alternativa para aqueles que estão saturados do mercado de pão de queijo industrializado
+            e que buscam um sabor verdadeiro com uma receita caseira.
+          </p>
         </div>
       </div>
       <div class="col-b">
-        <img src="./img/baguete.jpg" alt="foto de pão de queijo do reino"/>
+        <img src="./img/baguete.jpg" alt="foto de pão de queijo do reino" />
+      </div>
+    </div>
+  </section>
+  <section id="testimonials">
+    <div class="wrapper">
+      <header>
+        <h4>Depoimentos</h4>
+        <h2>Veja quem já passou por aqui</h2>
+      </header>
+      <div class="content">
+        <div class="carousel">
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="">
+                Carolina da Fonte
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="">
+                Gabi da Fonte
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="">
+                Sol Guimaraes
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="">
+                Ana Luiza
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="">
+                Frederico Guimaraes
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="">
+                Joao Maia
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+                Luis da Fonte
+              </cite>
+            </blockquote>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -231,20 +355,33 @@
           <h2>O mundo do pão de queijo fora da caixinha</h2>
         </header>
         <div class="content">
-          <p>Imagine um mundo mágico do pão de queijo, onde você poderia se deliciar com vários produtos com a base da massa de pão de queijo mais gostosa do Brasil. Conheça alguns produtos revolucionários criados pela mineiríssimo: </p>
+          <p>Imagine um mundo mágico do pão de queijo, onde você poderia se deliciar com vários produtos com a base da
+            massa de pão de queijo mais gostosa do Brasil. Conheça alguns produtos revolucionários criados pela
+            mineiríssimo: </p>
         </div>
       </div>
       <div class="col-b">
         <p>Coxinha de frango</p>
-        <img src="./img/Coxinha.jpg" alt="Coxinhas de frango em um prato branco"/>
+        <img src="./img/Coxinha.jpg" alt="Coxinhas de frango em um prato branco" />
       </div>
       <div class="col-c">
-        <p>Pizza</p>        
-        <img src="./img/Pizza.jpg" alt="Coxinhas de frango em um prato branco"/>
+        <p>Pizza</p>
+        <img src="./img/Pizza.jpg" alt="Coxinhas de frango em um prato branco" />
       </div>
       <div class="col-d">
-        <p>Waffles</p>        
-        <img src="./img/Waffle.jpg" alt="Coxinhas de frango em um prato branco"/>
+        <p>Waffles</p>
+        <img src="./img/Waffle.jpg" alt="Coxinhas de frango em um prato branco" />
+      </div>
+      <div class="col-e">
+        <h2>IMPORTANTE!!!</h2>
+        <p>Com o passar dos anos nos deparamos cada vez mais com um público especial, os <span>Celíacos</span>. O pão de
+          queijo de
+          verdade não leva nenhum tipo de farinha, e por isso, naturalmente, não contém glúten.
+          Quando começamos a fazer produtos diferenciados, porém com a massa de pão de queijo, sabíamos que seríamos
+          procurados por pessoas com intolerância ou alergia a glúten. A partir disso, iniciamos todo um cuidado com
+          outros ingredientes, como por exemplo o molho da pizza ou os temperos do frango da coxinha. E daí em diante,
+          nada que contenha farinha entra na nossa cozinha. Portanto, <span>garantimos não haver risco de contaminação
+            cruzada</span>, tranquilizando assim até mesmo os celíacos mais graves.</p>
       </div>
     </div>
   </section>
@@ -256,9 +393,12 @@
           <h2>Participações em eventos</h2>
         </header>
         <div class="content">
-          <p>Nossa primeira participação em eventos, foi um fiasco! 
-            O nordestino não tinha o hábito de comer pão de queijo, este tipo de produto não fazia parte da sua dieta. Então, só conseguíamos vender para familiares ou amigos mais íntimos. <br>
-            Porém isso em nada impediu nosso sonho, continuamos investindo em participações em eventos regionais em Recife e como quem experimentava nosso pão de queijo sempre voltava e fazia questão de nos divulgar, nos consolidamos como um dos mais concorridos quiosques em todos os eventos em nossa capital </p>
+          <p>Nossa primeira participação em eventos,
+            foi incrível e desafiador, imaginamos uma demanda mas fomos surpreendidos com a alta procura do nosso pão de
+            queijo, passamos sufoco no primeiro dia e isso nos preparou o que viria no dia seguinte, convocamos todos
+            nossos colaboradores e conseguimos atender a todos os clientes. <br>
+            A partir desse dia, decidimos que fariamos parte de toda feira em Recife
+            Porém isso em nada impediu nosso sonho, continuamos investindo em participações em eventos regionais.</p>
         </div>
       </div>
       <div class="col-b">
@@ -377,8 +517,13 @@
     </svg>
   </a>
   <!-- ScrollReveal Lib from scrollrevailjs.org-->
+ 
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
   <script src="./javascript.js"></script>
+  
 </body>
 
 </html>

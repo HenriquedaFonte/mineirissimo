@@ -2,12 +2,39 @@ window.addEventListener('scroll', onScroll);
 
 onScroll();
 
+$('.carousel').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+    
+
 function onScroll() {
   showNavOnScroll();
   showBackToTopButtonOnScroll();
   activateMenuAtCurrentSection(home);
   activateMenuAtCurrentSection(services);
   activateMenuAtCurrentSection(about);
+  activateMenuAtCurrentSection(testimonials);
   activateMenuAtCurrentSection(innovation);
   activateMenuAtCurrentSection(events);
   activateMenuAtCurrentSection(contact);
@@ -87,6 +114,8 @@ function closeMenu() {
   menuExpanded.classList.remove('menuExpanded');
 }
 
+
+
 // criando objeto no JavaScript:
 // Referenciamos o objeto com um VAR e entre {}
 // colocamos os seus valores,
@@ -104,16 +133,24 @@ ScrollReveal({
 #home .number,
 #services,
 #services header,
-#services .card
+#services .card,
+#services .content,
+#services .col-b img,
 #about,
 #about header,
 #about .content,
+#about img,
 #events,
 #events header,
 #events .content,
 #innovation,
 #innovation header,
-#innovation .content`);
+#innovation .content,
+#innovation .col-b,
+#innovation .col-c,
+#innovation .col-d,
+#innovation .col-e,
+#testimonials`);
 
 
 

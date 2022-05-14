@@ -98,6 +98,13 @@ section header h1 {
   line-height: 4.4rem;
 }
 
+section header h3 {
+  font-size: 2.5rem;
+  color: var(--fc-hero-p);
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
 section .content p {
   font-weight: 400;
   font-size: 1.8rem;
@@ -396,6 +403,19 @@ body.menuExpanded button path {
   margin-bottom: 6rem;
 }
 
+#services header h3 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+#services .principal p {
+  margin-bottom: 2rem;
+}
+
+#services .principal img {
+  margin-bottom: 3.6rem;
+}
+
 #services .cards {
   display: flex;
   flex-direction: column;
@@ -455,10 +475,80 @@ body.menuExpanded button path {
 
 #about .content img {}
 
-/*========= INOVATIONS ========================================================*/
+ /*========= TESTIMONIALS =======================================*/
+  
+ .carousel {
+   display: flex;
+   margin: auto;
+   width: auto;
+   height: auto;   
+ }
+
+ #testmonials .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+ #testimonials h2 {
+   margin-bottom: 6rem;
+   margin-top: 1.6rem;
+ }
+
+
+ #testimonials blockquote {    
+  box-shadow:0px 0px 12px rgba(0,0,0,0.08);
+  border-radius:.4rem;
+  margin-inline: 2rem;
+  text-align: left;
+  padding: 2rem;
+  
+  background-color: var(--bg-brand-light);
+}
+
+#testimonials blockquote p{
+  color: var(--fc-hero-p);
+  margin-block:1.5rem;
+  margin-bottom: 1.5rem;
+
+  position: relative;
+  text-indent: 2.875rem;
+ }
+
+ #testimonials blockquote p span {
+   font-weight: 700;
+   font-family: serif;
+   font-size: 5rem;
+   color: var(--bg-brand-button);
+
+   position: absolute;
+   top: -1rem;
+   left: -2.875rem;
+ }
+
+ #testimonials cite{
+  display:flex;
+  align-items:center;
+  font-style:normal;
+
+  color: var(--bg-brand-button);
+  font-weight: 700;
+}
+
+ #testimonials cite img{
+  width:4.2rem;
+  height:4.2rem;
+  object-fit:cover;
+  margin-right:1.0rem;
+  border-radius:3rem;
+ }
+
+
+
+
+/*========= INOVATIONS ==================================================*/
 
 #innovation {
-  background-color: var(--bg-white);
+  background-color: var(--bg-brand);
   text-align: center;
 }
 
@@ -504,11 +594,31 @@ body.menuExpanded button path {
   border-radius: 0.6rem;
 }
 
+#innovation .col-e h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  color: red;
+  animation: blink 1.5s infinite;
+}
+
+#innovation .col-e span {
+  font-weight: 700;
+  color: var(--bg-brand-button)
+}
+
+@keyframes blink {
+  0% {color:red;}
+  50% {color:white;}
+  100% {color: red}
+}
+
 
 /*========= S ========================================================*/
 
 #events {
-  background-color: var(--bg-brand);
+  background-color: var(--bg-white);
   text-align: left;
 }
 
@@ -526,7 +636,7 @@ body.menuExpanded button path {
 /*========= CONTACT ========================================================*/
 
 #contact {
-  background-color: var(--bg-white);
+  background-color: var(--bg-brand);
   text-align: left;
 }
 
@@ -680,7 +790,7 @@ footer .socialLinks {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 71%;
   }
 
   nav#navigation .menu ul:nth-child(1) {
@@ -783,7 +893,7 @@ footer .socialLinks {
 
   nav#navigation.scroll .menu a.button.active,
   nav#navigation.scroll .menu a.button:hover {
-    /* background-color: var(--primary-color); */
+    /* background-color: var(--bg-brand-button); */
     filter: brightness(1.3);
     border: none;
   }
@@ -857,6 +967,44 @@ footer .socialLinks {
     margin-inline: auto;
   }
 
+  #services h3 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #services p {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  #services p span {
+    font-weight: bold;
+    color: var(--bg-brand-button);
+  }
+
+  #services .col-b img {
+    width: 90%;
+    align-self: center;
+  }
+
+  #services .principal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'A B';
+    gap: 2.7rem;
+  }
+
+  #services .col-a {
+    grid-area: A;
+    align-self: center;
+  }
+
+  #services .col-b {
+    grid-area: B;
+    align-self: center;
+  }
+
   #services .cards {
     flex-direction: row;
     /*Encaixar os cards respeitando seu tamanho*/
@@ -879,10 +1027,12 @@ footer .socialLinks {
   }
 
   #about .col-a {
+    grid-area: A;
     align-self: center;
   }
 
   #about .col-b {
+    grid-area: B;
     align-self: center;
   }
 
@@ -891,6 +1041,74 @@ footer .socialLinks {
     margin-bottom: 0;
   }
 
+  /*========= TESTIMONIALS =======================================*/
+
+  .carousel {
+    display: flex;
+    margin: auto;
+    width: 110rem;
+    height: auto;  
+     
+  }
+
+  #testmonials .content p {
+    margin-top: 2.4rem;
+    margin-bottom: 3rem;
+  }
+  
+   #testimonials h2 {
+     margin-bottom: 6rem;
+     margin-top: 1.6rem;
+   }
+  
+  
+   #testimonials blockquote {    
+    box-shadow:0px 0px 12px rgba(0,0,0,0.08);
+    border-radius:.4rem;
+    margin-inline: 2rem;
+    text-align: left;
+    padding: 2rem;
+    
+    background-color: var(--bg-brand-light);
+  }
+  
+  #testimonials blockquote p{
+    color: var(--fc-hero-p);
+    margin-block:1.5rem;
+    margin-bottom: 1.5rem;
+  
+    position: relative;
+    text-indent: 2.875rem;
+   }
+  
+   #testimonials blockquote p span {
+     font-weight: 700;
+     font-family: serif;
+     font-size: 5rem;
+     color: var(--bg-brand-button);
+  
+     position: absolute;
+     top: -1rem;
+     left: -2.875rem;
+   }
+  
+   #testimonials cite{
+    display:flex;
+    align-items:center;
+    font-style:normal;
+  
+    color: var(--bg-brand-button);
+    font-weight: 700;
+  }
+  
+   #testimonials cite img{
+    width:4.2rem;
+    height:4.2rem;
+    object-fit:cover;
+    margin-right:1.0rem;
+    border-radius:3rem;
+   }
+
   /*========= INNOVATION =======================================*/
   
 
@@ -898,13 +1116,44 @@ footer .socialLinks {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
   'A A A'
-  'B C D';
+  'B C D'
+  'E E E';
   gap: 1.7rem;
 }
 
 #innovation {
   align-self: center;
 }
+
+#innovation .col-b {
+  grid-area: B;
+}
+
+#innovation .col-c {
+  grid-area: C;
+}
+
+#innovation .col-d {
+  grid-area: D;
+}
+
+#innovation .col-e {
+  grid-area: E;
+}
+
+#innovation .col-e p {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+#innovation .col-e span {
+  font-weight: 700;
+  color: var(--bg-brand-button);
+  font-size: 2.5rem;
+}
+
 #innovation .col-b p,
 #innovation .col-c p,
 #innovation .col-d p {
