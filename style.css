@@ -343,7 +343,7 @@ body.menuExpanded button path {
 }
 
 #home .photo img {
-  width: 26.4rem;
+  width: 36.4rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
@@ -599,7 +599,7 @@ body.menuExpanded button path {
   margin-bottom: 2rem;
   font-size: 3rem;
   text-align: center;
-  color: red;
+  color: var(--bg-brand-button);
   animation: blink 1.5s infinite;
 }
 
@@ -609,9 +609,9 @@ body.menuExpanded button path {
 }
 
 @keyframes blink {
-  0% {color:red;}
+  0% {color:var(--bg-brand-button);}
   50% {color:white;}
-  100% {color: red}
+  100% {color: var(--bg-brand-button)}
 }
 
 
