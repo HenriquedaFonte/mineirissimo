@@ -65,6 +65,7 @@ ul {
 
 img {
   max-width: 100%;
+  border-radius: 2rem;
 }
 
 .logo img {
@@ -339,14 +340,57 @@ body.menuExpanded button path {
 
 #home .button {
   margin-inline: auto;
-  margin-bottom: 4rem;  
+  margin-bottom: 5rem;  
 }
 
-#home .photo img {
-  width: 36.4rem;
+
+#home .photo img {  
+  width: auto;
+  margin-top: 5.5rem;  
+     /* object-position: 0 2rem; */
+  border-radius: 2rem;
+}
+
+.vapour {
+  /* position: relative; */
+  display: flex;
+  z-index: 1;
+  padding-left: 4rem;
+  justify-content: left;
+}
+
+.vapour span {
+  position: relative;
+  bottom: 5rem;
   display: block;
-  margin-inline: auto;
-  object-position: 0 2rem;
+  
+  min-width: 0.8rem;
+  height: 4rem;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 5s linear infinite;
+  opacity: 0;
+  filter: blur(0.9rem);
+  animation-delay: calc(var(--v) * -0.5s);
+}
+
+@keyframes animate {
+  0% {
+      transform: translateY(0) scaleX(1);
+      opacity: 0;
+  }
+  15% {
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-15rem) scaleX(5);
+  }
+  95% {
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(-30rem) scaleX(10);
+  }
 }
 
 #home .numbers {
@@ -401,11 +445,13 @@ body.menuExpanded button path {
 
 #services header h2 {
   margin-bottom: 6rem;
+  width: auto;
 }
 
 #services header h3 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 #services .principal p {
@@ -591,7 +637,7 @@ body.menuExpanded button path {
 #innovation img {  
   height: 30rem;
   object-fit: cover;
-  border-radius: 0.6rem;
+  border-radius: 2rem;
 }
 
 #innovation .col-e h2 {
@@ -908,13 +954,14 @@ footer .socialLinks {
     padding-top: var(3rem + --nav-height);
   }
 
-  #home .photo img {
-    /* padding-top: 10rem;  */
+  /* #home .photo img {
+    padding-top: 10rem; 
     width: 26.4rem;
     display: block;
     margin-inline: auto;
     object-position: 0 2rem;
-  }
+    border-radius: 2rem;
+  } */
 
   #home .wrapper {
     grid-template-columns: 55% 45%;
@@ -957,7 +1004,7 @@ footer .socialLinks {
   }
 
   #home .photo img {
-    width: 42rem;
+    width: auto;
   }
 
   /*========= SERVICES =======================================*/
@@ -1076,6 +1123,7 @@ footer .socialLinks {
     color: var(--fc-hero-p);
     margin-block:1.5rem;
     margin-bottom: 1.5rem;
+    font-size: 2.5rem;
   
     position: relative;
     text-indent: 2.875rem;
@@ -1178,7 +1226,7 @@ footer .socialLinks {
 #innovation img {  
   height: 30rem;
   object-fit: cover;
-  border-radius: 0.6rem;
+  border-radius: 2rem;
 }
 
 
