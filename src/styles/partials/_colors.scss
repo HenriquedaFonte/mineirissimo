@@ -1,0 +1,31 @@
+// Color pallete
+$color--black: #000;
+$color--blue: #29394a;
+$color--gray-1: #f8f9fa;
+$color--gray-2: #e9ecef;
+$color--gray-3: #adb5bd;
+$color--gray-4: #868e96;
+$color--gray-5: #ced4da;
+$color--white: #ffff;
+$color--gray-light: $color--gray-1;
+$color--blue-dark: #232935;
+$color--orange-gradient: linear-gradient(
+  95.27deg,
+  #ff6c4e 0.71%,
+  #e15c41 98.2%
+);
+
+// Brand colors
+$color--primary: #851200;
+$color--primary-light: #c7776b;
+$color--secondary: #868ba7;
+$color--secondary-dark: #3d4657;
+
+// Texts
+$color--text: $color--white;
+$color--text-on-color: $color--gray-2;
+$color--text-dark: $color--black;
+$color--text-ghost: $color--white;
+$title--body-dark: $color--blue;
+
+$bg-brand: #fffaf0;

@@ -1,0 +1,58 @@
+@import "styles/partials/colors";
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-radius: 8px;
+  border: solid 1px transparent;
+
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+
+  gap: 10px;
+}
+
+.primaryButton {
+  background-color: $color--primary;
+  color: $color--gray-1;
+
+  border: $color--primary;
+}
+
+.primaryButton:hover {
+  background-color: $color--primary-light;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+// Size classes
+.buttonLarge {
+  width: 205px;
+  height: 40px;
+
+  padding: 12px 72px;
+}
+
+.buttonMedium {
+  width: 195px;
+  height: 40px;
+
+  padding: 12px 24px;
+}
+
+.buttonSmall {
+  width: 175px;
+  height: 40px;
+  padding: 12px 12px;
+}
