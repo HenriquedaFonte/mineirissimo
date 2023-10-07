@@ -13,6 +13,7 @@
 
 .navbarContainer {
   width: 85%;
+  height: 100%;
 
   display: flex;
   flex-direction: row;
@@ -35,10 +36,13 @@
 }
 
 .nav {
-  width: 60%;
+  width: 70%;
+  height: 100%;
 
   display: flex;
   justify-content: center;
+
+  padding: 0;
 }
 
 .hamburguerIcon {
@@ -46,33 +50,65 @@
 }
 
 .navbar {
+  height: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 
-  padding-left: 0;
   margin-bottom: 0;
 
-  gap: 18px;
+  gap: 5px;
 }
 
 .navbarItem {
-  width: 95px;
+  width: 100px;
+  height: 100%;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
+}
+
+.navbarItem::after {
+  content: "";
+  width: 0;
+  height: 2px;
+
+  transform: scaleX(0);
+  transform-origin: bottom left;
+
+  background-color: $color--white;
+
+  position: relative;
+
+  bottom: -37px;
+  left: 0;
+
+  transition: width 0.3s ease;
+}
+
+.navbarItem:hover::after {
+  width: 100%;
+
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbarContent {
+  width: 100%;
+
   text-decoration: none;
   text-align: center;
 
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
 
   padding: 5px;
 
@@ -80,61 +116,9 @@
 }
 
 .navbarContent:hover {
-  color: $color--white;
-  text-decoration: underline solid 2px;
   font-weight: 600;
 }
 
 .headerButton {
-  background-color: inherit;
-
-  border: solid 1px $color--white;
-  border-radius: 20px;
-
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 1.8rem;
-}
-
-.headerButton:hover {
-  background-color: $color--primary;
-  border: none;
-}
-
-@media screen and (max-width: 900px) {
-  .hamburguerIcon {
-    width: 25px;
-    height: 25px;
-    display: block;
-
-    color: $color--blue-dark;
-
-    cursor: pointer;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  .navbarActive {
-    display: block;
-
-    height: fit-content;
-
-    position: absolute;
-    top: 68px;
-    right: 10px;
-    background: $color--gray-light;
-
-    z-index: 1000;
-
-    list-style: none;
-    padding: 15px;
-    margin: 0;
-  }
-
-  .navbarActive li {
-    padding: 0.5rem 0;
-  }
+  color: $color--white;
 }
