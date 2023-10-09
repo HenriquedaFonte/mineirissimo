@@ -50,6 +50,7 @@
 }
 
 .navbar {
+  width: 80%;
   height: 100%;
 
   display: flex;
@@ -60,11 +61,11 @@
 
   margin-bottom: 0;
 
-  gap: 5px;
+  gap: 15px;
 }
 
 .navbarItem {
-  width: 100px;
+  width: fit-content;
   height: 100%;
 
   display: flex;
@@ -100,6 +101,12 @@
   transform-origin: bottom left;
 }
 
+.navbarItem:hover {
+  .navbarContent {
+    font-weight: 600;
+  }
+}
+
 .navbarContent {
   width: 100%;
 
@@ -113,10 +120,6 @@
   padding: 5px;
 
   color: $color--blue-dark;
-}
-
-.navbarContent:hover {
-  font-weight: 600;
 }
 
 .headerButton {
