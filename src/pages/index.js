@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { Header } from "components/Header";
+
 export default function Home() {
   return (
     <>
@@ -12,6 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicons/logo_nova.ico" />
       </Head>
+      <Header />
       <main>
         <h2>Aqui, desenvolva a SPA da Mineiríssimo</h2>
       </main>

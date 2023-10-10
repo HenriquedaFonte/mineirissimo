@@ -1,0 +1,127 @@
+@import "../../styles/partials/_colors.scss";
+
+.header {
+  max-width: 100%;
+  height: 110px;
+
+  display: flex;
+
+  background: $color--primary-light;
+
+  border-bottom: solid 1px $color--gray-2;
+}
+
+.navbarContainer {
+  width: 85%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  margin: 0 auto;
+}
+
+.headerLogoContainer {
+  width: 130px;
+  height: 90px;
+
+  padding: 0;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  width: 70%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.hamburguerIcon {
+  display: none;
+}
+
+.navbar {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+
+  margin-bottom: 0;
+
+  gap: 15px;
+}
+
+.navbarItem {
+  width: fit-content;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.navbarItem::after {
+  content: "";
+  width: 0;
+  height: 2px;
+
+  transform: scaleX(0);
+  transform-origin: bottom left;
+
+  background-color: $color--white;
+
+  position: relative;
+
+  bottom: -37px;
+  left: 0;
+
+  transition: width 0.3s ease;
+}
+
+.navbarItem:hover::after {
+  width: 100%;
+
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbarItem:hover {
+  .navbarContent {
+    font-weight: 600;
+  }
+}
+
+.navbarContent {
+  width: 100%;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+
+  padding: 5px;
+
+  color: $color--blue-dark;
+}
+
+.headerButton {
+  color: $color--white;
+}
