@@ -3,11 +3,13 @@
 .hero {
   width: 100%;
 
-  margin-top: 50px;
+  background-color: $color--gray-2;
+
+  padding: 70px 0 180px 0;
 }
 
 .container {
-  width: 85%;
+  width: 80%;
 
   display: flex;
   flex-direction: row;
@@ -18,22 +20,45 @@
 }
 
 .content {
-  width: 400px;
-  height: 300px;
+  width: 530px;
+  height: 320px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.titleSecondary {
-  font-size: 16px;
+.title {
+  font-size: 15px;
   text-transform: uppercase;
+  line-height: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  color: $color--primary;
+}
+
+.headline {
+  font-size: 54px;
+  color: $color--black;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 17px;
+  color: $color--gray-5;
+  line-height: 28px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
 }
 
 .image {
-  width: 450px;
-  height: 300px;
+  width: 480px;
+  height: 320px;
 
   border-radius: 18px;
 }

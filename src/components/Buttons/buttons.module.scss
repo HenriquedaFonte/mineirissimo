@@ -6,10 +6,9 @@
   align-items: center;
   justify-content: space-evenly;
 
-  border-radius: 8px;
+  border-radius: 30px;
   border: solid 1px transparent;
 
-  font-family: "Inter";
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -18,10 +17,21 @@
 }
 
 .primaryButton {
+  background-color: $color--primary;
+  color: $color--white;
+
+  border: solid 1.5px $color--primary;
+}
+
+.primaryButton:hover {
+  background-color: $color--primary-light;
+  color: $color--black;
+}
+
+.secondaryButton {
   background-color: inherit;
 
   border: solid 1px $color--white;
-  border-radius: 20px;
 
   text-transform: uppercase;
   font-weight: 700;
@@ -29,7 +39,7 @@
   line-height: 1.8rem;
 }
 
-.primaryButton:hover {
+.secondaryButton:hover {
   background-color: $color--primary;
   border: none;
 }
@@ -44,10 +54,8 @@
 
 // Size classes
 .buttonLarge {
-  width: 205px;
-  height: 40px;
-
-  padding: 12px 72px;
+  width: 220px;
+  height: 50px;
 }
 
 .buttonMedium {

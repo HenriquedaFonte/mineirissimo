@@ -4,20 +4,25 @@ import Image from "next/image";
 import ilustrationHero from "../../assets/images/ilustration-hero.png";
 import { PrimaryButton } from "components/Buttons";
 
+import { BsWhatsapp } from "react-icons/bs";
+
 import styles from "./hero.module.scss";
 
 export function Hero() {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h4 className={styles.titleSecondary}>boas-vindas ao mineiríssimo</h4>
-          <h1 className={styles.title}>O legítimo sabor do pão de queijo</h1>
+          <h4 className={styles.title}>boas-vindas ao mineiríssimo</h4>
+          <h1 className={styles.headline}>O legítimo sabor do pão de queijo</h1>
           <p className={styles.paragraph}>
             Há mais de 10 anos fabricando o autêntico pão de queijo mineiro.
             Venha conhecer, você não vai se arrepender!
           </p>
-          <button>faça se pedido</button>
+          <PrimaryButton className={styles.button} size="large">
+            <BsWhatsapp />
+            faça se pedido
+          </PrimaryButton>
         </div>
         <div>
           <Image
@@ -27,6 +32,6 @@ export function Hero() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 import Logo from "../../assets/icons/logo.png";
 import styles from "./header.module.scss";
-import { PrimaryButton } from "components/Buttons";
+import { SecondaryButton } from "components/Buttons";
 
 export function Header() {
   const [active, setActive] = useState(false);
@@ -65,9 +65,9 @@ export function Header() {
             </li>
           </ul>
         </nav>
-        <PrimaryButton className={styles.headerButton} size="small">
+        <SecondaryButton className={styles.headerButton} size="small">
           Fale conosco
-        </PrimaryButton>
+        </SecondaryButton>
       </div>
     </div>
   );
