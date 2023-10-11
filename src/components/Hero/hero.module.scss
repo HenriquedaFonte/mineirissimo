@@ -9,7 +9,7 @@
 }
 
 .container {
-  width: 80%;
+  width: 83%;
 
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@
 }
 
 .content {
-  width: 530px;
+  width: 550px;
   height: 320px;
 
   display: flex;
@@ -39,14 +39,14 @@
 
 .headline {
   font-size: 54px;
-  color: $color--black;
+  color: $color--blue-dark;
   font-weight: 700;
   line-height: 55px;
 }
 
 .paragraph {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   color: $color--gray-5;
   line-height: 28px;
 }
@@ -54,6 +54,10 @@
 .button {
   display: flex;
   justify-content: center;
+
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .image {
