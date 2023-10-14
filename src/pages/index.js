@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import { Header } from "components/Header";
+import { Features } from "components/Features";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <h2>Aqui, desenvolva a SPA da Mineiríssimo</h2>
+        <Features />
       </main>
     </>
   );
