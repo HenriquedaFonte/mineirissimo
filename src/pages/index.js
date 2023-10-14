@@ -18,8 +18,8 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Features />
         <Hero />
+        <Features />
       </main>
     </>
   );
