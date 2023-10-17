@@ -24,9 +24,9 @@ export function Products() {
             crescidos, cheirosos e quentinhos, eram servidos com um delicioso
             café. O que procuramos fazer, é um resgate dessa época. Um tempo que
             não faz tanto tempo assim. E o principal, fazemos com todo
-            carinho,amor e alegria, como nossas vovós nos ensinaram. Como{" "}
-            <span>TODOS</span> os nossos produtos, nosso pão de queijo não leva
-            farinha e é <span>100% SEM GLÚTEM.</span>
+            carinho,amor e alegria, como nossas vovós nos ensinaram. Como todos
+            os nossos produtos, nosso pão de queijo não leva farinha e é{" "}
+            <span className={styles.highlights}>100% sem glúten.</span>
           </p>
         </div>
         <div>
