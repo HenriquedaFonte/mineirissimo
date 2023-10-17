@@ -1,0 +1,76 @@
+@import "../../styles/partials/colors";
+
+.products {
+  width: 100%;
+
+  background-color: $color--white;
+
+  padding: 70px 0 180px 0;
+}
+
+.title {
+  width: fit-content;
+  height: max-content;
+  margin: 0 auto;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: $color--primary;
+
+  margin: 0 auto 20px auto;
+}
+
+.headline {
+  width: fit-content;
+  height: max-content;
+  margin: 0 auto;
+
+  font-size: 45px;
+  font-weight: 700;
+  color: $color--gray-5;
+
+  margin-bottom: 50px;
+}
+
+.presentation {
+  width: 83%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto 40px auto;
+}
+
+.content {
+  width: 550px;
+  height: 320px;
+
+  text-align: left;
+}
+
+.contentTitle {
+  font-size: 27px;
+  color: $color--gray-5;
+  font-weight: 600;
+
+  margin-bottom: 18px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 17px;
+  color: $color--gray-5;
+
+  line-height: 31px;
+}
+
+.contentImage {
+  width: 480px;
+  height: 320px;
+
+  border-radius: 18px;
+}
