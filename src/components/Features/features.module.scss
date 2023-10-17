@@ -2,12 +2,12 @@
 
 .features {
   width: 70%;
-  height: 220px;
+  height: 200px;
 
   display: flex;
   align-items: center;
 
-  margin: -100px auto 0 auto;
+  margin: -110px auto 0 auto;
 
   background-color: $color--white;
   border: solid 1px $color--gray-2;
@@ -42,9 +42,9 @@
 }
 
 .title {
-  font-size: 50px;
+  font-size: 48px;
   color: $color--text-dark;
-  font-weight: 800px;
+  font-weight: 700;
 }
 
 .content {
