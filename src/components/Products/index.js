@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { GrPrevious, GrNext } from "react-icons/gr";
+
+import { scrollLeftProducts, scrollRightProducts } from "utils/listScroll";
 
 import ilustrationProducts from "../../assets/images/ilustration-products.png";
+import { ProductsCards } from "components/ProductsCard";
 
 import styles from "./products.module.scss";
 
@@ -38,8 +42,25 @@ export function Products() {
         </div>
       </div>
 
-      <div className={styles.productsCards}>
-        colocar o componente de card dos produtos
+      <div className={styles.listContainer}>
+        <GrPrevious
+          className={styles.button}
+          type="button"
+          onClick={() => scrollLeftProducts()}
+        ></GrPrevious>
+
+        <ul
+          className={`${styles.list} row row-cols-1 row-cols-md-3 g-4`}
+          id="list"
+        >
+          <ProductsCards />
+        </ul>
+
+        <GrNext
+          className={styles.button}
+          type="button"
+          onClick={() => scrollRightProducts()}
+        ></GrNext>
       </div>
     </section>
   );
