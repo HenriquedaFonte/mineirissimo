@@ -70,3 +70,31 @@
   height: 40px;
   padding: 12px 12px;
 }
+
+// Scroll to top button
+
+.scrollToTopButtonContainer {
+  bottom: 20px;
+  right: 40px;
+
+  position: fixed;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.backToTopButton {
+  width: 50px;
+  height: 50px;
+
+  background-color: $color--primary;
+
+  border: none;
+  border-radius: 50%;
+}
+
+.arrowUp {
+  font-size: 30px;
+  font-weight: 800px;
+  color: $color--white;
+}
