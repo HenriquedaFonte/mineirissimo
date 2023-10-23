@@ -33,9 +33,9 @@ export function Products() {
             <span className={styles.highlights}>100% sem glúten.</span>
           </p>
         </div>
-        <div>
+        <div className={styles.imageContainer}>
           <Image
-            className={styles.contentImage}
+            className={styles.image}
             src={ilustrationProducts}
             alt="Imagem com dois pães de queijos em cima de um prato"
           />
