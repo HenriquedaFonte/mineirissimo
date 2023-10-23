@@ -24,7 +24,7 @@ export function Hero() {
             faça se pedido
           </PrimaryButton>
         </div>
-        <div>
+        <div className={styles.imageContainer}>
           <Image
             className={styles.image}
             src={ilustrationHero}
