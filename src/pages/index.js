@@ -4,6 +4,8 @@ import { Header } from "components/Header";
 import { Features } from "components/Features";
 import { Hero } from "components/Hero";
 import { Products } from "components/Products";
+import { About } from "components/About";
+import { ScrollToTopButton } from "components/Buttons/scrollToTopButton";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
         <Hero />
         <Features />
         <Products />
+        <About />
+        <ScrollToTopButton />
       </main>
     </>
   );
