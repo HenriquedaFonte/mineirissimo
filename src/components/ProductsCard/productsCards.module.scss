@@ -1,11 +1,24 @@
 @import "../../styles/partials/colors";
 
+.container {
+  width: 83%;
+  height: 460px;
+
+  margin: 0 auto;
+}
+
 .card {
   width: 340px;
+  height: 415px;
+
+  margin: 0 auto;
+
   padding: 30px;
-  border: solid 1px #e8ddeb;
+  border: solid 1px $color--gray-2;
   border-radius: 10px;
-  background-color: #fffaf0;
+  background-color: $color--gray-1;
+
+  cursor: pointer;
 }
 
 .image {
