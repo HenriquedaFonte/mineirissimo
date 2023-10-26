@@ -1,9 +1,9 @@
 export function scrollLeftProducts() {
-  const left = document.querySelector("#list");
-  left?.scrollBy(-740, 0);
+  const left = document.querySelector("#productList");
+  left?.scrollBy(-760, 0);
 }
 
 export function scrollRightProducts() {
-  const right = document.querySelector("#list");
-  right?.scrollBy(740, 0);
+  const right = document.querySelector("#productList");
+  right?.scrollBy(760, 0);
 }

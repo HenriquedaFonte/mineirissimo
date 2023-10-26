@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { GrPrevious, GrNext } from "react-icons/gr";
-
-import { scrollLeftProducts, scrollRightProducts } from "utils/listScroll";
+import { Swiper } from "swiper/react";
 
 import ilustrationProducts from "../../assets/images/ilustration-products.png";
 import { ProductsCards } from "components/ProductsCard";
@@ -42,26 +40,9 @@ export function Products() {
         </div>
       </div>
 
-      <div className={styles.listContainer}>
-        <GrPrevious
-          className={styles.button}
-          type="button"
-          onClick={() => scrollLeftProducts()}
-        ></GrPrevious>
-
-        <ul
-          className={`${styles.list} row row-cols-1 row-cols-md-3 g-4`}
-          id="list"
-        >
-          <ProductsCards />
-        </ul>
-
-        <GrNext
-          className={styles.button}
-          type="button"
-          onClick={() => scrollRightProducts()}
-        ></GrNext>
-      </div>
+      <Swiper id="productList" className={styles.productList}>
+        <ProductsCards />
+      </Swiper>
     </section>
   );
 }
