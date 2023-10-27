@@ -1,0 +1,46 @@
+@import "../../styles/partials/colors";
+
+.container {
+  width: 83%;
+  height: 300px;
+
+  margin: 0 auto 50px auto;
+}
+
+.card {
+  box-shadow: 0px 0px 12px $color--shadow;
+  border-radius: 6px;
+  text-align: left;
+  padding: 26px;
+
+  background-color: $color--gray-2;
+}
+
+.paragraph {
+  color: $color--gray-5;
+  margin-bottom: 20px;
+  margin-block: 16px;
+
+  font-weight: 400;
+  font-size: 27px;
+
+  text-indent: 46px;
+  line-height: 30px;
+}
+
+.paragraph > span {
+  font-family: serif;
+  font-size: 82px;
+  color: $color--primary;
+
+  left: -10px;
+  position: absolute;
+}
+
+.image {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  margin-right: 16px;
+  border-radius: 50px;
+}
