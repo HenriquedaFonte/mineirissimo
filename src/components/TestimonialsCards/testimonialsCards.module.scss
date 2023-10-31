@@ -24,17 +24,28 @@
   font-weight: 400;
   font-size: 27px;
 
-  text-indent: 46px;
+  text-indent: 32px;
   line-height: 30px;
 }
 
-.paragraph > span {
+.quoteMarks {
   font-family: serif;
-  font-size: 82px;
+  font-size: 80px;
   color: $color--primary;
 
   left: -10px;
   position: absolute;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+
+  color: $color--primary;
 }
 
 .image {

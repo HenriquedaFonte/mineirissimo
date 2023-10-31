@@ -1,4 +1,9 @@
-import userImg from "../../assets/icons/user-img.jpg";
+import userCarolImg from "../../assets/icons/carol.png";
+import userAnaImg from "../../assets/icons/ana.png";
+import userMartaImg from "../../assets/icons/marta.png";
+import userJoaoImg from "../../assets/icons/joao.png";
+import userSolImg from "../../assets/icons/sol.png";
+import userLuisImg from "../../assets/icons/luis.png";
 
 export const testimonialsData = [
   {
@@ -6,7 +11,7 @@ export const testimonialsData = [
     name: "Carolina da Fonte",
     message:
       "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.",
-    img: userImg,
+    img: userCarolImg,
   },
   {
     id: 2,
@@ -14,7 +19,7 @@ export const testimonialsData = [
     message:
       "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.",
 
-    img: userImg,
+    img: userMartaImg,
   },
   {
     id: 3,
@@ -22,7 +27,7 @@ export const testimonialsData = [
     message:
       "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.",
 
-    img: userImg,
+    img: userSolImg,
   },
   {
     id: 4,
@@ -30,7 +35,7 @@ export const testimonialsData = [
     message:
       "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.",
 
-    img: userImg,
+    img: userAnaImg,
   },
   {
     id: 5,
@@ -38,7 +43,7 @@ export const testimonialsData = [
     message:
       "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.",
 
-    img: userImg,
+    img: userJoaoImg,
   },
   {
     id: 6,
@@ -46,6 +51,6 @@ export const testimonialsData = [
     message:
       "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.",
 
-    img: userImg,
+    img: userLuisImg,
   },
 ];
