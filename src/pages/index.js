@@ -5,6 +5,7 @@ import { Features } from "components/Features";
 import { Hero } from "components/Hero";
 import { Products } from "components/Products";
 import { About } from "components/About";
+import { Innovations } from "components/Innovations";
 import { ScrollToTopButton } from "components/Buttons/scrollToTopButton";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <Features />
         <Products />
         <About />
+        <Innovations />
         <ScrollToTopButton />
       </main>
     </>
