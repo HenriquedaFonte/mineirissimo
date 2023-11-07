@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
-import { productsData } from "database";
+import { productsData } from "database/products";
 
 import styles from "./productsCards.module.scss";
 

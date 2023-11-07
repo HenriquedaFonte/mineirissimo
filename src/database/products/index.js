@@ -1,9 +1,9 @@
-import paoDoReino from "../assets/images/paoDoReino.png";
-import coxinha from "../assets/images/coxinha.png";
-import pizza from "../assets/images/pizza.png";
-import baguete from "../assets/images/baguete.png";
-import panini from "../assets/images/panini.png";
-import crostata from "../assets/images/crostata.png";
+import paoDoReino from "../../assets/images/paoDoReino.png";
+import coxinha from "../../assets/images/coxinha.png";
+import pizza from "../../assets/images/pizza.png";
+import baguete from "../../assets/images/baguete.png";
+import panini from "../../assets/images/panini.png";
+import crostata from "../../assets/images/crostata.png";
 
 export const productsData = [
   {
