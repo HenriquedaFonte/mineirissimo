@@ -7,7 +7,10 @@ import styles from "./about.module.scss";
 export function About() {
   return (
     <section className={styles.about} id="sobre">
-      <h4 className={styles.section}>Sobre nós</h4>
+      <h4 className={styles.title}>Sobre nós</h4>
+      <h1 className={styles.headline}>
+        Entenda quem somos e por que existimos
+      </h1>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
@@ -19,9 +22,6 @@ export function About() {
           />
         </div>
         <div className={styles.content}>
-          <h1 className={styles.title}>
-            Entenda quem somos e por que existimos
-          </h1>
           <p className={styles.paragraph}>
             Somos uma empresa artesanal de pão de queijo e temos uma variedade
             de outros produtos feitos, todos, a partir da massa do pão de
