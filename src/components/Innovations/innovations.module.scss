@@ -1,0 +1,136 @@
+@import "../../styles/partials/colors";
+
+.innovations {
+  width: 100%;
+
+  background-color: $color--gray-1;
+
+  text-align: center;
+
+  padding: 150px 0;
+}
+
+.container {
+  width: 1100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto 100px auto;
+}
+
+.title {
+  width: fit-content;
+  height: max-content;
+
+  margin: 0 auto 20px auto;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: $color--primary;
+}
+
+.headline {
+  width: fit-content;
+  height: max-content;
+  margin: 0 auto;
+
+  font-size: 45px;
+  font-weight: 700;
+  color: $color--gray-5;
+
+  margin-bottom: 32px;
+}
+
+.paragraph {
+  margin-bottom: 70px;
+
+  font-weight: 400;
+  font-size: 20px;
+  color: $color--gray-5;
+
+  text-align: center;
+
+  line-height: 30px;
+}
+
+.imagesGalery {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imageContainer {
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.image {
+  width: 350px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.imageTitle {
+  width: fit-content;
+
+  position: relative;
+  top: 300px;
+
+  padding: 0 20px;
+  margin-left: 32px;
+  border-radius: 32px;
+  background-color: white;
+
+  font-size: 32px;
+  font-weight: 500;
+  color: #851200;
+}
+
+.blink {
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+
+  color: $color--primary;
+
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: $color--primary;
+  }
+  50% {
+    color: $color--white;
+  }
+  100% {
+    color: $color--primary;
+  }
+}
+
+.informationContent {
+  margin-bottom: 32px;
+
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.informationContent > span {
+  font-weight: 700;
+  color: $color--primary;
+  font-size: 28px;
+}

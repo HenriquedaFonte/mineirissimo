@@ -6,6 +6,7 @@ import { Hero } from "components/Hero";
 import { Products } from "components/Products";
 import { About } from "components/About";
 import { Testimonials } from "components/Testimonials";
+import { Innovations } from "components/Innovations";
 import { ScrollToTopButton } from "components/Buttons/scrollToTopButton";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <Products />
         <About />
         <Testimonials />
+        <Innovations />
         <ScrollToTopButton />
       </main>
     </>
