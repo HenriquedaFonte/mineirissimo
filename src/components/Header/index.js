@@ -65,9 +65,11 @@ export function Header() {
             </li>
           </ul>
         </nav>
-        <SecondaryButton className={styles.headerButton} size="small">
-          Fale conosco
-        </SecondaryButton>
+        <a className={styles.navbarContent} href={"/#contato"}>
+          <SecondaryButton className={styles.headerButton} size="small">
+            Fale conosco
+          </SecondaryButton>
+        </a>
       </div>
     </div>
   );
