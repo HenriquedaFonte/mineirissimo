@@ -79,8 +79,17 @@
   display: flex;
   align-items: center;
 
-  color: white;
+  color: $color--white;
   font-size: 16px;
+
+  gap: 8px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+
+  color: $color--white;
 
   gap: 8px;
 }

@@ -45,8 +45,14 @@ export function Footer() {
           <h5 className={styles.contentTitle}>Contato</h5>
           <ul className={styles.contactList}>
             <li className={styles.contactItem}>
-              <IoMailOutline />
-              mineirissimoartesanal@gmail.com
+              <a
+                className={styles.mail}
+                href="mailto:mineirissimoartesanal@gmail.com"
+                target="_blank"
+              >
+                <IoMailOutline />
+                mineirissimoartesanal@gmail.com
+              </a>
             </li>
 
             <li className={styles.contactItem}>Telefone: (81)9.9627-2423</li>
