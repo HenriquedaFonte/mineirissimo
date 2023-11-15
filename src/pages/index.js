@@ -8,6 +8,7 @@ import { About } from "components/About";
 import { Testimonials } from "components/Testimonials";
 import { Innovations } from "components/Innovations";
 import { Events } from "components/Events";
+import { Footer } from "components/Footer";
 import { ScrollToTopButton } from "components/Buttons/scrollToTopButton";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <Testimonials />
         <Innovations />
         <Events />
+        <Footer />
         <ScrollToTopButton />
       </main>
     </>
