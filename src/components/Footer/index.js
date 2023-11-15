@@ -25,8 +25,8 @@ export function Footer() {
         </div>
         <div class={`${styles.content} col-3`}>
           <h5 className={styles.contentTitle}>Mídia</h5>
-          <ul className={styles.linksList}>
-            <li className={styles.link}>
+          <ul className={styles.socialLinksList}>
+            <li className={styles.sociaLlink}>
               <a
                 target="_blank"
                 href="http://instagram.com/mineirissimo.recife"
@@ -34,28 +34,41 @@ export function Footer() {
                 <IoLogoInstagram />
               </a>
             </li>
-            <li className={styles.link}>
+            <li className={styles.sociaLlink}>
               <a target="_blank" href="http://facebook.com/mineirissimo.recife">
                 <FiFacebook />
               </a>
             </li>
           </ul>
         </div>
+
+        <div class={`${styles.content} col-3`}>
+          <h5 className={styles.contentTitle}>Informações</h5>
+          <ul className={styles.list}>
+            <li className={styles.item}>
+              <a target="_blank" href="">
+                Política de privacidades
+              </a>
+            </li>
+            <li className={styles.item}>
+              <a target="_blank" href="">
+                Termos e condições
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div class={`${styles.content} col-3`}>
           <h5 className={styles.contentTitle}>Contato</h5>
-          <ul className={styles.contactList}>
-            <li className={styles.contactItem}>
-              <a
-                className={styles.mail}
-                href="mailto:mineirissimoartesanal@gmail.com"
-                target="_blank"
-              >
+          <ul className={styles.list}>
+            <li className={styles.item}>
+              <a href="mailto:mineirissimoartesanal@gmail.com" target="_blank">
                 <IoMailOutline />
                 mineirissimoartesanal@gmail.com
               </a>
             </li>
 
-            <li className={styles.contactItem}>Telefone: (81)9.9627-2423</li>
+            <li className={styles.item}>Telefone: (81)9.9627-2423</li>
           </ul>
         </div>
       </div>
