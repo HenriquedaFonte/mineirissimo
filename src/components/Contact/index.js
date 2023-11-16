@@ -22,7 +22,7 @@ export function Contact() {
             />
           </div>
           <h2 className={styles.title}>
-            Sabores únicos para momentos especiais.
+            A felicidade em cada produto. Prove o melhor!
           </h2>
           <Link
             href="https://web.whatsapp.com/send?phone=5581996272423"
