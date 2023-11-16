@@ -7,7 +7,7 @@
 
   text-align: center;
 
-  padding: 40px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 .container {
@@ -16,16 +16,31 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   margin: 0 auto;
 }
 
 .content {
-  height: 165px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  gap: 8px;
+
+  h5 {
+    margin: 0;
+  }
 }
 
 .contentTitle {
@@ -58,13 +73,13 @@
   color: $color--white;
 }
 
-.sociaLlink svg {
+.logoInstagram {
   color: $color--white;
   font-size: 36px;
 }
 
 .list {
-  width: max-content;
+  width: fit-content;
 
   display: flex;
   flex-direction: column;
@@ -76,9 +91,10 @@
 .item {
   display: flex;
   align-items: center;
+  text-wrap: balance;
 
   color: $color--white;
-  font-size: 16px;
+  font-size: 17px;
 
   gap: 8px;
 }

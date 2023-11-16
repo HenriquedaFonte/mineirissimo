@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./footer.module.scss";
 
 import {
@@ -7,25 +6,30 @@ import {
   IoLocationOutline,
 } from "react-icons/io5";
 
+import { InstagramFeed } from "components/InstagramFeed";
+
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div class={`${styles.content} col-3`}>
-          <h5 className={styles.contentTitle}>Instagram</h5>
+        <div className={`${styles.content} col-3`}>
+          <header className={styles.instagram}>
+            <IoLogoInstagram className={styles.logoInstagram} />
+            <h5 className={styles.contentTitle}>Instagram</h5>
+          </header>
           <ul className={styles.socialLinksList}>
             <li className={styles.sociaLlink}>
               <a
                 target="_blank"
                 href="http://instagram.com/mineirissimo.recife"
               >
-                <IoLogoInstagram />
+                <InstagramFeed />
               </a>
             </li>
           </ul>
         </div>
 
-        <div class={`${styles.content} col-3`}>
+        <div className={`${styles.content} col-3`}>
           <h5 className={styles.contentTitle}>Informações</h5>
           <ul className={styles.list}>
             <li className={styles.item}>
@@ -41,7 +45,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div class={`${styles.content} col-3`}>
+        <div className={`${styles.content} col-4`}>
           <h5 className={styles.contentTitle}>Sobre</h5>
           <ul className={styles.list}>
             <li className={styles.item}>
