@@ -1,30 +1,18 @@
 import Image from "next/image";
 import styles from "./footer.module.scss";
 
-import { IoLogoInstagram, IoMailOutline } from "react-icons/io5";
-import { FiFacebook } from "react-icons/fi";
-
-import Logo from "../../assets/icons/logo.png";
+import {
+  IoLogoInstagram,
+  IoMailOutline,
+  IoLocationOutline,
+} from "react-icons/io5";
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div class={`${styles.content} col-3`}>
-          <header className={styles.logoContainer}>
-            <Image
-              className={styles.logo}
-              src={Logo}
-              alt="Logotipo da Mineiríssimo"
-            />
-          </header>
-          <div className={styles.rights}>
-            <p>©2010 Mineirissimo.</p>
-            <p>Todos os direitos reservados.</p>
-          </div>
-        </div>
-        <div class={`${styles.content} col-3`}>
-          <h5 className={styles.contentTitle}>Mídia</h5>
+          <h5 className={styles.contentTitle}>Instagram</h5>
           <ul className={styles.socialLinksList}>
             <li className={styles.sociaLlink}>
               <a
@@ -32,11 +20,6 @@ export function Footer() {
                 href="http://instagram.com/mineirissimo.recife"
               >
                 <IoLogoInstagram />
-              </a>
-            </li>
-            <li className={styles.sociaLlink}>
-              <a target="_blank" href="http://facebook.com/mineirissimo.recife">
-                <FiFacebook />
               </a>
             </li>
           </ul>
@@ -59,8 +42,13 @@ export function Footer() {
         </div>
 
         <div class={`${styles.content} col-3`}>
-          <h5 className={styles.contentTitle}>Contato</h5>
+          <h5 className={styles.contentTitle}>Sobre</h5>
           <ul className={styles.list}>
+            <li className={styles.item}>
+              <IoLocationOutline />
+              R. Sergio Magalhães, 54 Graças Recife-PE
+            </li>
+
             <li className={styles.item}>
               <a href="mailto:mineirissimoartesanal@gmail.com" target="_blank">
                 <IoMailOutline />
@@ -71,6 +59,10 @@ export function Footer() {
             <li className={styles.item}>Telefone: (81)9.9627-2423</li>
           </ul>
         </div>
+      </div>
+
+      <div className={styles.contentRights}>
+        <p>©2010 Mineirissimo. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

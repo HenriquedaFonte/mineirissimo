@@ -7,7 +7,7 @@
 
   text-align: center;
 
-  padding: 50px 0;
+  padding: 40px 0 0 0;
 }
 
 .container {
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   margin: 0 auto;
 }
@@ -26,8 +26,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
 
-  gap: 26px;
+.contentTitle {
+  color: $color--white;
+  font-size: 24px;
+  font-weight: 400;
+
+  margin-bottom: 16px;
 }
 
 .logoContainer {
@@ -40,11 +46,6 @@
 .logo {
   width: 100%;
   height: 100%;
-}
-
-.rights {
-  color: $color--white;
-  text-align: start;
 }
 
 .socialLinksList {
@@ -62,16 +63,13 @@
   font-size: 36px;
 }
 
-.contentTitle {
-  color: $color--white;
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .list {
+  width: max-content;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   gap: 8px;
 }
 
@@ -92,4 +90,16 @@
   color: $color--white;
 
   gap: 8px;
+}
+
+.contentRights {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  border-top: 1px solid $color--gray-2;
+
+  color: $color--white;
 }
