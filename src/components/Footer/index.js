@@ -33,14 +33,10 @@ export function Footer() {
           <h5 className={styles.contentTitle}>Informações</h5>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a target="_blank" href="">
-                Política de privacidades
-              </a>
+              <a href="/politica_de_privacidade">Política de privacidades</a>
             </li>
             <li className={styles.item}>
-              <a target="_blank" href="">
-                Termos e condições
-              </a>
+              <a href="/termos_e_condicoes">Termos e condições</a>
             </li>
           </ul>
         </div>
