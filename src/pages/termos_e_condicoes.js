@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
 
 import { Header } from "components/Header";
+import { _TermsAndConditions } from "components/TermsAndConditions";
 
 export default function TermsAndConditions() {
   return (
@@ -17,10 +17,7 @@ export default function TermsAndConditions() {
       </Head>
       <main>
         <Header />
-        <h1>Aqui desenvolva a página de termos e condições</h1>
-        <Link href="/">
-          <button>Voltar</button>
-        </Link>
+        <_TermsAndConditions />
       </main>
     </>
   );

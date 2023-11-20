@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
 
 import { Header } from "components/Header";
+import { _PrivacyPolicy } from "components/PrivacyPolicy";
 
 export default function PrivacyPolicy() {
   return (
@@ -17,10 +17,7 @@ export default function PrivacyPolicy() {
       </Head>
       <main>
         <Header />
-        <h1>Aqui desenvolva a página de política de privacidade</h1>
-        <Link href="/">
-          <button>Voltar</button>
-        </Link>
+        <_PrivacyPolicy />
       </main>
     </>
   );

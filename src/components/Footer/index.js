@@ -33,7 +33,7 @@ export function Footer() {
           <h5 className={styles.contentTitle}>Informações</h5>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a href="/politica_de_privacidade">Política de privacidades</a>
+              <a href="/politicas_de_privacidade">Políticas de privacidade</a>
             </li>
             <li className={styles.item}>
               <a href="/termos_e_condicoes">Termos e condições</a>
@@ -50,7 +50,11 @@ export function Footer() {
             </li>
 
             <li className={styles.item}>
-              <a href="mailto:mineirissimoartesanal@gmail.com" target="_blank">
+              <a
+                href="mailto:mineirissimoartesanal@gmail.com"
+                target="_blank"
+                rel="noopener"
+              >
                 <IoMailOutline />
                 mineirissimoartesanal@gmail.com
               </a>
