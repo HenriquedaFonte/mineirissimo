@@ -10,9 +10,51 @@
 }
 
 .title {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  color: $color--gray-5;
+  line-height: 48px;
+}
+
+.article {
+  margin: 40px 0 8px 0;
+
+  font-size: 17px;
+  line-height: 28px;
+  color: $color--text-dark;
+  font-weight: 500;
 }
 
 .paragraph {
-  margin: 28px 0;
+  margin: 0 0 16px;
+
+  color: $color--gray-5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  em {
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 32px;
+}
+
+.item {
+  color: $color--gray-5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.link {
+  text-decoration: none;
+  color: $color--primary;
+  font-weight: bold;
 }

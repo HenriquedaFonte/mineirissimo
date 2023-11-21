@@ -101,20 +101,24 @@ export function _TermsAndConditions() {
         você nestes termos serão encerrados; (b) você deve parar de usar o
         aplicativo e (se necessário) excluí-lo do dispositivo.
       </p>
-      <h3>Mudanças neste Termos e Condições</h3>
+      <h3 className={styles.article}>Mudanças neste Termos e Condições</h3>
       <p className={styles.paragraph}>
         Podemos atualizar nossos Termos e Condições de tempos em tempos.
         Portanto, é recomendável revisar esta página periodicamente para
         verificar quaisquer alterações. Iremos notificá-lo de quaisquer
         alterações, publicando a nova{" "}
-        <a href="/politicas_de_privacidade">Política de Privacidade</a> {""}
+        <a className={styles.link} href="/politicas_de_privacidade">
+          Política de Privacidade
+        </a>{" "}
+        {""}
         nesta página.
       </p>
-      <h3>Contato</h3>
+      <h3 className={styles.article}>Contato</h3>
       <p className={styles.paragraph}>
         Se tiver alguma pergunta ou sugestão sobre nossa Política de
         Privacidade, não deixe de entrar em contato através do email{" "}
         <a
+          className={styles.link}
           href="mailto:mineirissimoartesanal@gmail.com"
           target="_blank"
           rel="noopener"
