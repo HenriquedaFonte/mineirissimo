@@ -27,11 +27,13 @@ export function _PrivacyPolicy() {
       <p className={styles.paragraph}>
         Os termos usados nesta Política de Privacidade têm os mesmos
         significados que em nossos{" "}
-        <a href="/termos_e_condicoes">Termos e Condições</a>, que podem ser
-        acessados na página da Mineiríssimo, a menos que definido de outra forma
-        nesta Política de Privacidade.
+        <a className={styles.link} href="/termos_e_condicoes">
+          Termos e Condições
+        </a>
+        , que podem ser acessados na página da Mineiríssimo, a menos que
+        definido de outra forma nesta Política de Privacidade.
       </p>
-      <h3>Coleta de dados</h3>
+      <h3 className={styles.article}>Coleta de dados</h3>
       <p className={styles.paragraph}>
         Para uma melhor experiência, ao usar nosso Serviço, podemos exigir que
         você nos forneça certas informações de identificação pessoal, incluindo,
@@ -46,7 +48,7 @@ export function _PrivacyPolicy() {
         quando você usa nossos Serviços, visita nossos Sites ou interage com
         nossos e-mails.
       </p>
-      <h3>Log Data</h3>
+      <h3 className={styles.article}>Log Data</h3>
       <p className={styles.paragraph}>
         Queremos informá-lo que sempre que você utilizar nosso Serviço, em caso
         de erro nos Serviços, coletamos dados e informações (por meio de
@@ -56,7 +58,7 @@ export function _PrivacyPolicy() {
         sistema operacional, configuração dos Serviços ao utilizar nosso
         serviço, hora e data de uso do serviço e outras estatísticas.
       </p>
-      <h3>Cookies</h3>
+      <h3 className={styles.article}>Cookies</h3>
       <p className={styles.paragraph}>
         Cookies são arquivos com uma pequena quantidade de dados que são
         comumente usados como identificadores exclusivos anônimos. Eles são
@@ -71,16 +73,20 @@ export function _PrivacyPolicy() {
         enviado para o seu dispositivo. Se você optar por recusar nossos
         cookies, pode não ser capaz de usar algumas partes deste Serviço.
       </p>
-      <h3>Provedores de serviço</h3>
+      <h3 className={styles.article}>Provedores de serviço</h3>
       <p className={styles.paragraph}>
         Podemos empregar empresas terceirizadas e indivíduos pelos seguintes
         motivos:
       </p>
-      <ul>
-        <li>Para facilitar nosso serviço;</li>
-        <li>Para fornecer o serviço em nosso nome;</li>
-        <li>Para realizar serviços relacionados com o serviço; ou</li>
-        <li>Para nos ajudar a analisar como nosso serviço é usado.</li>
+      <ul className={styles.list}>
+        <li className={styles.item}>Para facilitar nosso serviço;</li>
+        <li className={styles.item}>Para fornecer o serviço em nosso nome;</li>
+        <li className={styles.item}>
+          Para realizar serviços relacionados com o serviço; ou
+        </li>
+        <li className={styles.item}>
+          Para nos ajudar a analisar como nosso serviço é usado.
+        </li>
       </ul>
       <p className={styles.paragraph}>
         Queremos informar aos usuários deste Serviço que esses terceiros têm
@@ -88,7 +94,7 @@ export function _PrivacyPolicy() {
         atribuídas a eles em nosso nome. No entanto, eles são obrigados a não
         divulgar ou usar as informações para qualquer outra finalidade.
       </p>
-      <h3>Segurança</h3>
+      <h3 className={styles.article}>Segurança</h3>
       <p className={styles.paragraph}>
         Valorizamos sua confiança em nos fornecer suas informações pessoais,
         portanto, estamos nos empenhando para usar meios comercialmente
@@ -96,7 +102,7 @@ export function _PrivacyPolicy() {
         transmissão pela internet, ou método de armazenamento eletrônico é 100%
         seguro e confiável, e não podemos garantir sua segurança absoluta.
       </p>
-      <h3>Links para outros Sites</h3>
+      <h3 className={styles.article}>Links para outros Sites</h3>
       <p className={styles.paragraph}>
         Este serviço pode conter links para outros sites. Se você clicar em um
         link de terceiros, você será direcionado a esse site. Observe que esses
@@ -106,7 +112,7 @@ export function _PrivacyPolicy() {
         políticas de privacidade ou práticas de quaisquer sites ou serviços de
         terceiros.
       </p>
-      <h3>Privacidade das crianças</h3>
+      <h3 className={styles.article}>Privacidade das crianças</h3>
       <p className={styles.paragraph}>
         Esses Serviços não se dirigem a ninguém com menos de 13 anos. Não
         coletamos intencionalmente informações de identificação pessoal de
@@ -116,18 +122,19 @@ export function _PrivacyPolicy() {
         sabe que seu filho nos forneceu informações pessoais, entre em contato
         para que possamos tomar as medidas necessárias.
       </p>
-      <h3>Mudanças nesta Política de Privacidade</h3>
+      <h3 className={styles.article}>Mudanças nesta Política de Privacidade</h3>
       <p className={styles.paragraph}>
         Podemos atualizar nossa Política de Privacidade de tempos em tempos.
         Portanto, é recomendável revisar esta página periodicamente para
         verificar quaisquer alterações. Iremos notificá-lo de quaisquer
         alterações, publicando a nova Política de Privacidade nesta página.
       </p>
-      <h3>Contato</h3>
+      <h3 className={styles.article}>Contato</h3>
       <p className={styles.paragraph}>
         Se tiver alguma pergunta ou sugestão sobre nossa Política de
         Privacidade, não deixe de entrar em contato através do email{" "}
         <a
+          className={styles.link}
           href="mailto:mineirissimoartesanal@gmail.com"
           target="_blank"
           rel="noopener"
