@@ -19,10 +19,12 @@ export function Hero() {
             Há mais de 10 anos fabricando o autêntico pão de queijo mineiro.
             Venha conhecer, você não vai se arrepender!
           </p>
-          <PrimaryButton className={styles.button} size="large">
-            <BsWhatsapp />
-            faça se pedido
-          </PrimaryButton>
+          <a href={"/#contato"}>
+            <PrimaryButton className={styles.button} size="large">
+              <BsWhatsapp />
+              faça se pedido
+            </PrimaryButton>
+          </a>
         </div>
         <div className={styles.imageContainer}>
           <Image
