@@ -9,8 +9,8 @@ export function _PrivacyPolicy() {
       <p className={styles.paragraph}>
         Aplicativos móveis, serviços, produtos e aplicativos baseados na web
         Mineiríssimo foram construídos para propósito Comercial. Este SERVIÇO é
-        fornecido pela <em>Guimarães Maia, Ltda</em> e deve ser usado no estado
-        em que se encontra.
+        fornecido pela <em>Mineiríssimo</em> e deve ser usado no estado em que
+        se encontra.
       </p>
       <p className={styles.paragraph}>
         Esta página é usada para informar os visitantes sobre nossas políticas

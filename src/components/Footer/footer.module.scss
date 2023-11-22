@@ -64,6 +64,8 @@
 }
 
 .socialLinksList {
+  list-style: none;
+
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -80,6 +82,8 @@
 
 .list {
   width: fit-content;
+
+  list-style: none;
 
   display: flex;
   flex-direction: column;

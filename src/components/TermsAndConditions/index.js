@@ -14,22 +14,22 @@ export function _TermsAndConditions() {
       <p className={styles.paragraph}>
         Ao baixar ou usar aplicativos móveis, serviços, produtos e aplicativos
         baseados na web (&quot;Serviços&quot;) fornecidos pela{" "}
-        <em>Guimarães Maia, Ltda</em>, estes termos irão aplicar-se
-        automaticamente a você - você deve certificar-se, portanto, que você os
-        leia com atenção antes de usar Serviços. Você não está permissão para
-        copiar ou modificar o aplicativo, qualquer parte do aplicativo, ou
-        nossas marcas registradas de qualquer forma. Você não tem permissão para
-        tentar extraia o código-fonte dos Serviços, e você também não deve
-        tentar para traduzir os Serviços para outros idiomas, ou criar versões
-        derivadas. Os próprios serviçøs e todas as marcas registradas, direitos
-        autorais, direitos de banco de dados e outros direitos de propriedade
-        intelectual relacionados a ela, ainda pertencem à Guimarães Maia, Ltda.
+        <em>Mineiríssimo</em>, estes termos irão aplicar-se automaticamente a
+        você - você deve certificar-se, portanto, que você os leia com atenção
+        antes de usar Serviços. Você não está permissão para copiar ou modificar
+        o aplicativo, qualquer parte do aplicativo, ou nossas marcas registradas
+        de qualquer forma. Você não tem permissão para tentar extraia o
+        código-fonte dos Serviços, e você também não deve tentar para traduzir
+        os Serviços para outros idiomas, ou criar versões derivadas. Os próprios
+        serviçøs e todas as marcas registradas, direitos autorais, direitos de
+        banco de dados e outros direitos de propriedade intelectual relacionados
+        a ela, ainda pertencem à Mineiríssimo.
       </p>
       <p className={styles.paragraph}>
-        Guimarães Maia, Ltda tem o compromisso de garantir que os Serviços sejam
-        tão úteis e eficientes quanto possível. Por esse motivo, nós reserva-se
-        o direito de fazer alterações no aplicativo ou cobrar por seus serviços,
-        a qualquer momento e por qualquer motivo. Nós nunca iremos cobrar pelo
+        Mineiríssimo tem o compromisso de garantir que os Serviços sejam tão
+        úteis e eficientes quanto possível. Por esse motivo, nós reserva-se o
+        direito de fazer alterações no aplicativo ou cobrar por seus serviços, a
+        qualquer momento e por qualquer motivo. Nós nunca iremos cobrar pelo
         aplicativo ou seus serviços sem torná-lo muito claro para você
         exatamente o que você está pagando.
       </p>
@@ -46,13 +46,12 @@ export function _TermsAndConditions() {
         funcionará corretamente ou de forma alguma.
       </p>
       <p className={styles.paragraph}>
-        Você deve estar ciente de que há certas coisas que Guimarães Maia, Ltda
-        não se responsabiliza por. Certas funções dos Serviços exigirão que os
-        mesmos tenham uma conexão de internet ativa. A conexão pode ser Wi-Fi ou
-        fornecida pelo seu provedor de rede móvel, mas Guimarães Maia, Ltda não
-        pode assumir a responsabilidade pelos Serviços não funcionarem
-        totalmente se você não tem acesso a Wi-Fi, e ou se sua cota de dados
-        acabou.
+        Você deve estar ciente de que há certas coisas que Mineiríssimo não se
+        responsabiliza por. Certas funções dos Serviços exigirão que os mesmos
+        tenham uma conexão de internet ativa. A conexão pode ser Wi-Fi ou
+        fornecida pelo seu provedor de rede móvel, mas Mineiríssimo não pode
+        assumir a responsabilidade pelos Serviços não funcionarem totalmente se
+        você não tem acesso a Wi-Fi, e ou se sua cota de dados acabou.
       </p>
       <p className={styles.paragraph}>
         Se você estiver usando os Serviços fora de uma área com Wi-Fi, lembre-se
@@ -68,21 +67,21 @@ export function _TermsAndConditions() {
         Serviços.
       </p>
       <p className={styles.paragraph}>
-        Na mesma linha, Guimarães Maia, Ltda nem sempre pode se responsabilizar
-        pela forma como você usa os Serviços, ou seja, você precisa se
-        certificar de que seu dispositivo permaneça carregado - se ficar sem
-        bateria e você não puder ligá-lo para aproveitar o Serviço, Guimarães
-        Maia, Ltda não se responsabiliza.
+        Na mesma linha, Mineiríssimo nem sempre pode se responsabilizar pela
+        forma como você usa os Serviços, ou seja, você precisa se certificar de
+        que seu dispositivo permaneça carregado - se ficar sem bateria e você
+        não puder ligá-lo para aproveitar o Serviço, Mineiríssimo não se
+        responsabiliza.
       </p>
       <p className={styles.paragraph}>
-        Com relação à responsabilidade da Guimarães Maia, Ltda pelo uso dos
-        Serviços, quando você estiver usando os Serviços, é importante ter em
-        mente que embora nos esforcemos para garantir que ele esteja atualizado
-        e correto em todos os momentos, confiamos em terceiros para nos fornecer
-        informações para que possamos disponibilizá-las para você. Guimarães
-        Maia, Ltda não se responsabiliza por qualquer perda, direta ou indireta,
-        que você experimente como resultado de confiar totalmente nesta
-        funcionalidade dos Serviços.
+        Com relação à responsabilidade da Mineiríssimo pelo uso dos Serviços,
+        quando você estiver usando os Serviços, é importante ter em mente que
+        embora nos esforcemos para garantir que ele esteja atualizado e correto
+        em todos os momentos, confiamos em terceiros para nos fornecer
+        informações para que possamos disponibilizá-las para você. Mineiríssimo
+        não se responsabiliza por qualquer perda, direta ou indireta, que você
+        experimente como resultado de confiar totalmente nesta funcionalidade
+        dos Serviços.
       </p>
       <p className={styles.paragraph}>
         Em algum momento, podemos desejar atualizar o aplicativo móvel. O
@@ -90,16 +89,16 @@ export function _TermsAndConditions() {
         requisitos para ambos os sistemas (e para quaisquer sistemas adicionais
         para os quais decidirmos estender a disponibilidade do aplicativo) podem
         mudar, e você precisará baixar as atualizações se quiser continuar
-        usando o aplicativo. Guimarães Maia, Ltda não promete que sempre
-        atualizará o aplicativo para que seja relevante para você e/ou funcione
-        com o Android &amp; Versão do iOS que você instalou em seu dispositivo.
-        No entanto, você promete sempre aceitar as atualizações do aplicativo
-        quando oferecidas a você. Também podemos desejar interromper o
-        fornecimento do aplicativo e pode encerrar o uso dele a qualquer momento
-        sem aviso prévio de rescisão para você. A menos que informemos o
-        contrário, em caso de rescisão, (a) os direitos e licenças concedidos a
-        você nestes termos serão encerrados; (b) você deve parar de usar o
-        aplicativo e (se necessário) excluí-lo do dispositivo.
+        usando o aplicativo. Mineiríssimo não promete que sempre atualizará o
+        aplicativo para que seja relevante para você e/ou funcione com o Android
+        &amp; Versão do iOS que você instalou em seu dispositivo. No entanto,
+        você promete sempre aceitar as atualizações do aplicativo quando
+        oferecidas a você. Também podemos desejar interromper o fornecimento do
+        aplicativo e pode encerrar o uso dele a qualquer momento sem aviso
+        prévio de rescisão para você. A menos que informemos o contrário, em
+        caso de rescisão, (a) os direitos e licenças concedidos a você nestes
+        termos serão encerrados; (b) você deve parar de usar o aplicativo e (se
+        necessário) excluí-lo do dispositivo.
       </p>
       <h3 className={styles.article}>Mudanças neste Termos e Condições</h3>
       <p className={styles.paragraph}>
@@ -127,9 +126,6 @@ export function _TermsAndConditions() {
         </a>
         .
       </p>
-      <Link href="/">
-        <button>Voltar</button>
-      </Link>
     </div>
   );
 }
