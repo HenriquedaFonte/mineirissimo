@@ -23,11 +23,11 @@ export function Header({ size, dark }) {
             />
           </Link>
 
-          <SecondaryButton className={styles.headerButton} size="small">
-            <Link className={styles.link} href="/">
+          <Link className={styles.link} href="/">
+            <SecondaryButton className={styles.headerButton} size="small">
               voltar
-            </Link>
-          </SecondaryButton>
+            </SecondaryButton>
+          </Link>
         </>
       ) : (
         <>

@@ -152,6 +152,8 @@
 }
 
 .link {
+  width: min-content;
+
   text-decoration: none;
 
   color: $color--white;
