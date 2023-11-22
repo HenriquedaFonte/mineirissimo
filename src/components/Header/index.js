@@ -76,18 +76,19 @@ export function Header({ size, dark }) {
                 </a>
               </li>
 
-              <li className={styles.navbarItem}>
-                <a className={styles.navbarContent} href={"/#eventos"}>
-                  Eventos
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <li className={styles.navbarItem}>
+              <a className={styles.navbarContent} href={"/#eventos"}>
+                Eventos
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a className={styles.navbarContent} href={"/#contato"}>
           <SecondaryButton className={styles.headerButton} size="small">
             Fale conosco
           </SecondaryButton>
-        </>
-      )}
-    </BaseHeader>
+        </a>
+      </div>
+    </div>
   );
 }
