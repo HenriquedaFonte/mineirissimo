@@ -1,0 +1,58 @@
+@import "../../styles/partials/colors";
+
+.content {
+  width: 1100px;
+
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.title {
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  color: $color--gray-5;
+  line-height: 48px;
+}
+
+.article {
+  margin: 40px 0 8px 0;
+
+  font-size: 17px;
+  line-height: 28px;
+  color: $color--text-dark;
+  font-weight: 500;
+}
+
+.paragraph {
+  margin: 0 0 16px;
+
+  color: $color--gray-5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  em {
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 36px;
+}
+
+.item {
+  color: $color--gray-5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.link {
+  text-decoration: none;
+  color: $color--primary;
+  font-weight: bold;
+}
