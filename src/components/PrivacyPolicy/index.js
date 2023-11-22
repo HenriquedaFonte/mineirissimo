@@ -1,6 +1,6 @@
-import Link from "next/link";
-
 import styles from "./privacyPolicy.module.scss";
+
+import { Header } from "components/Header";
 
 export function _PrivacyPolicy() {
   return (
@@ -143,9 +143,6 @@ export function _PrivacyPolicy() {
         </a>
         .
       </p>
-      <Link href="/">
-        <button>Voltar</button>
-      </Link>
     </div>
   );
 }

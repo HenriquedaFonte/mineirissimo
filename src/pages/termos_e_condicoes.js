@@ -16,7 +16,7 @@ export default function TermsAndConditions() {
         <link rel="icon" href="/favicons/logo_nova.ico" />
       </Head>
       <main>
-        <Header />
+        <Header dark={"active"} size={"large"} />
         <_TermsAndConditions />
       </main>
     </>
