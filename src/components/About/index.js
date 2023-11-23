@@ -1,17 +1,36 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import ilustrationAbout from "../../assets/images/ilustration-about.png";
 
 import styles from "./about.module.scss";
 
+const parent = {
+  hidden: { y: 100, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+};
+
 export function About() {
   return (
-    <section className={styles.about} id="sobre">
+    <motion.section
+      className={styles.about}
+      id="sobre"
+      variants={parent}
+      initial="hidden"
+      whileInView="visible"
+      onReset={true}
+    >
       <h4 className={styles.title}>Sobre nós</h4>
       <h1 className={styles.headline}>
         Entenda quem somos e por que existimos
       </h1>
-      <div className={styles.container}>
+      <motion.div
+        className={styles.container}
+        variants={parent}
+        initial="hidden"
+        whileInView="visible"
+        onReset={true}
+      >
         <div className={styles.imageContainer}>
           <Image
             src={
@@ -38,7 +57,7 @@ export function About() {
             verdadeiro com uma receita caseira.
           </p>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
