@@ -1,15 +1,34 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import ilustrationEvents from "../../assets/images/ilustration-events.png";
 
 import styles from "./events.module.scss";
 
+const parent = {
+  hidden: { y: 100, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+};
+
 export function Events() {
   return (
-    <section className={styles.events} id="eventos">
+    <motion.section
+      className={styles.events}
+      id="eventos"
+      variants={parent}
+      initial="hidden"
+      whileInView="visible"
+      onReset={true}
+    >
       <h4 className={styles.title}>eventos</h4>
       <h1 className={styles.headline}>Participações em eventos</h1>
-      <div className={styles.container}>
+      <motion.div
+        className={styles.container}
+        variants={parent}
+        initial="hidden"
+        whileInView="visible"
+        onReset={true}
+      >
         <div className={styles.imageContainer}>
           <Image
             src={ilustrationEvents}
@@ -29,7 +48,7 @@ export function Events() {
             participações em eventos regionais.
           </p>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
