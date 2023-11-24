@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import Image from "next/image";
+
+import cookieIcon from "../../assets/icons/cookie.png";
 
 import styles from "./cookies.module.scss";
 
@@ -33,7 +36,14 @@ export function CookieBanner() {
     showBanner &&
     !acceptedCookies && (
       <div className={styles.container}>
-        <h5 className={styles.title}>Nós valorizamos sua privacidade</h5>
+        <header className={styles.header}>
+          <Image
+            className={styles.icon}
+            src={cookieIcon}
+            alt="Um desenho de um cookie mordido"
+          />
+          <h5 className={styles.title}>Nós valorizamos sua privacidade</h5>
+        </header>
         <p className={styles.paragraph}>
           <strong>
             Este site usa cookies para oferecer a você uma experiência

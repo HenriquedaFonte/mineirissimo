@@ -28,13 +28,26 @@
   z-index: 10;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
 .title {
   font-weight: bold;
   font-size: 1.125rem;
   font-family: "Montserrat", sans-serif;
   color: $color--gray-6;
-
-  margin-bottom: 1rem;
 
   line-height: 28px;
 }
