@@ -20,7 +20,6 @@ export function Products() {
       variants={parent}
       initial="hidden"
       whileInView="visible"
-      onReset={true}
     >
       <h4 className={styles.title}>Produtos</h4>
       <h1 className={styles.headline}>
@@ -32,7 +31,6 @@ export function Products() {
         variants={parent}
         initial="hidden"
         whileInView="visible"
-        onReset={true}
       >
         <div className={styles.content}>
           <h3 className={styles.contentTitle}>
@@ -59,12 +57,7 @@ export function Products() {
         </div>
       </motion.div>
 
-      <motion.div
-        variants={parent}
-        initial="hidden"
-        whileInView="visible"
-        onReset={true}
-      >
+      <motion.div variants={parent} initial="hidden" whileInView="visible">
         <Swiper id="productList" className={styles.productList}>
           <ProductsCards />
         </Swiper>
