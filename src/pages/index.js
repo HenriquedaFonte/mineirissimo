@@ -10,6 +10,7 @@ import { Innovations } from "components/Innovations";
 import { Events } from "components/Events";
 import { Contact } from "components/Contact";
 import { Footer } from "components/Footer";
+import { CookieBanner } from "components/Cookies";
 import { ScrollToTopButton } from "components/Buttons/scrollToTopButton";
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
         <Events />
         <Contact />
         <Footer />
+        <CookieBanner />
         <ScrollToTopButton />
       </main>
     </>
