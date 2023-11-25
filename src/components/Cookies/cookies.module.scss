@@ -61,6 +61,14 @@
   margin: 0 0 1rem;
 }
 
+.link {
+  color: $color--primary-light;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 .buttonContainer {
   margin-top: 20px;
 
