@@ -2,16 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Logo from "../../assets/icons/logo.png";
-
 import { BsWhatsapp } from "react-icons/bs";
 
 import { PrimaryButton } from "components/Buttons";
+import { AnimatedElement } from "utils/animations";
 
 import styles from "./contact.module.scss";
 
 export function Contact() {
   return (
-    <section className={styles.contact} id="contato">
+    <AnimatedElement element="section" className={styles.contact} id="contato">
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.logoContainer}>
@@ -27,6 +27,7 @@ export function Contact() {
           <Link
             href="https://web.whatsapp.com/send?phone=5581996272423"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <PrimaryButton className={styles.button} size="large">
               <BsWhatsapp />
@@ -45,6 +46,6 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedElement>
   );
 }

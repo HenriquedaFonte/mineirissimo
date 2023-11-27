@@ -2,14 +2,16 @@ import Image from "next/image";
 
 import ilustrationEvents from "../../assets/images/ilustration-events.png";
 
+import { AnimatedElement } from "utils/animations";
+
 import styles from "./events.module.scss";
 
 export function Events() {
   return (
-    <section className={styles.events} id="eventos">
+    <AnimatedElement element="section" className={styles.events} id="eventos">
       <h4 className={styles.title}>eventos</h4>
       <h1 className={styles.headline}>Participações em eventos</h1>
-      <div className={styles.container}>
+      <AnimatedElement element="div" className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
             src={ilustrationEvents}
@@ -29,7 +31,7 @@ export function Events() {
             participações em eventos regionais.
           </p>
         </div>
-      </div>
-    </section>
+      </AnimatedElement>
+    </AnimatedElement>
   );
 }

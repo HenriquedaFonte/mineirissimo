@@ -4,29 +4,31 @@ import coxinha from "../../assets/images/coxinha.png";
 import pizza from "../../assets/images/pizza.png";
 import crostata from "../../assets/images/crostata.png";
 
+import { AnimatedElement } from "utils/animations";
+
 import styles from "./innovations.module.scss";
 
 export function Innovations() {
   return (
     <section className={styles.innovations} id="inovacoes">
       <div className={styles.container}>
-        <header>
+        <AnimatedElement element="header">
           <h4 className={styles.title}>inovações</h4>
           <h1 className={styles.headline}>
             O mundo do pão de queijo fora da caixinha
           </h1>
-        </header>
+        </AnimatedElement>
 
-        <div className={styles.content}>
+        <AnimatedElement element="div" className={styles.content}>
           <p className={styles.paragraph}>
             Imagine um mundo mágico do pão de queijo, onde você poderia se
             deliciar com vários produtos com a base da massa de pão de queijo
             mais gostosa do Brasil. Conheça alguns produtos revolucionários
             criados pela mineiríssimo:
           </p>
-        </div>
+        </AnimatedElement>
 
-        <ul className={styles.imagesGalery}>
+        <AnimatedElement element="ul" className={styles.imagesGalery}>
           <li className={`${styles.imageContainer} col-4`}>
             <span className={styles.imageTitle}>Coxinha de frango</span>
             <Image
@@ -51,9 +53,9 @@ export function Innovations() {
               alt="Imagem de duas crostatas"
             />
           </li>
-        </ul>
+        </AnimatedElement>
 
-        <div className={styles.information}>
+        <AnimatedElement element="div" className={styles.information}>
           <h2 className={styles.blink}>IMPORTANTE!!!</h2>
           <p className={styles.informationContent}>
             Com o passar dos anos nos deparamos cada vez mais com um público
@@ -69,7 +71,7 @@ export function Innovations() {
             <span>garantimos não haver risco de contaminação cruzada</span>,
             tranquilizando assim até mesmo os celíacos mais graves.
           </p>
-        </div>
+        </AnimatedElement>
       </div>
     </section>
   );

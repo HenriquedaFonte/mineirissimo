@@ -7,10 +7,11 @@ import {
 } from "react-icons/io5";
 
 import { InstagramFeed } from "components/InstagramFeed";
+import { AnimatedElement } from "utils/animations";
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <AnimatedElement element="footer" className={styles.footer}>
       <div className={styles.container}>
         <div className={`${styles.content} col-3`}>
           <header className={styles.instagram}>
@@ -22,6 +23,7 @@ export function Footer() {
               <a
                 target="_blank"
                 href="http://instagram.com/mineirissimo.recife"
+                rel="noopener noreferrer"
               >
                 <InstagramFeed />
               </a>
@@ -53,7 +55,7 @@ export function Footer() {
               <a
                 href="mailto:mineirissimoartesanal@gmail.com"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <IoMailOutline />
                 mineirissimoartesanal@gmail.com
@@ -68,6 +70,6 @@ export function Footer() {
       <div className={styles.contentRights}>
         <p>©2010 Mineirissimo. Todos os direitos reservados.</p>
       </div>
-    </footer>
+    </AnimatedElement>
   );
 }

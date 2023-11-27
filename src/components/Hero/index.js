@@ -31,6 +31,7 @@ export function Hero() {
             className={styles.image}
             src={ilustrationHero}
             alt="Imagem de uma sexta com pães de queijo"
+            priority={true}
           />
         </div>
       </div>

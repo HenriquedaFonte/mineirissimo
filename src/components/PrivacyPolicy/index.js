@@ -1,7 +1,5 @@
 import styles from "./privacyPolicy.module.scss";
 
-import { Header } from "components/Header";
-
 export function _PrivacyPolicy() {
   return (
     <div className={styles.content}>

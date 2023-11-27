@@ -1,5 +1,14 @@
 @import "../../styles/partials/colors";
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero {
   width: 100%;
   height: 650px;
@@ -7,6 +16,8 @@
   background-color: $color--gray-2;
 
   padding: 70px 0 180px 0;
+
+  animation: fadeIn 2s forwards;
 }
 
 .container {

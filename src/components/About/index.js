@@ -1,17 +1,18 @@
 import Image from "next/image";
 
+import { AnimatedElement } from "utils/animations";
 import ilustrationAbout from "../../assets/images/ilustration-about.png";
 
 import styles from "./about.module.scss";
 
 export function About() {
   return (
-    <section className={styles.about} id="sobre">
+    <AnimatedElement element="section" className={styles.about} id="sobre">
       <h4 className={styles.title}>Sobre nós</h4>
       <h1 className={styles.headline}>
         Entenda quem somos e por que existimos
       </h1>
-      <div className={styles.container}>
+      <AnimatedElement element={"div"} className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
             src={
@@ -38,7 +39,7 @@ export function About() {
             verdadeiro com uma receita caseira.
           </p>
         </div>
-      </div>
-    </section>
+      </AnimatedElement>
+    </AnimatedElement>
   );
 }
