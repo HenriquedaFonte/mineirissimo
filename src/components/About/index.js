@@ -18,7 +18,6 @@ export function About() {
       variants={parent}
       initial="hidden"
       whileInView="visible"
-      onReset={true}
     >
       <h4 className={styles.title}>Sobre nós</h4>
       <h1 className={styles.headline}>
@@ -29,7 +28,6 @@ export function About() {
         variants={parent}
         initial="hidden"
         whileInView="visible"
-        onReset={true}
       >
         <div className={styles.imageContainer}>
           <Image

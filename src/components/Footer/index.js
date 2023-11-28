@@ -21,7 +21,6 @@ export function Footer() {
       variants={parent}
       initial="hidden"
       whileInView="visible"
-      onReset={true}
     >
       <div className={styles.container}>
         <div className={`${styles.content} col-3`}>

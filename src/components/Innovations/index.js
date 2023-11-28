@@ -16,12 +16,7 @@ export function Innovations() {
   return (
     <section className={styles.innovations} id="inovacoes">
       <div className={styles.container}>
-        <motion.header
-          variants={parent}
-          initial="hidden"
-          whileInView="visible"
-          onReset={true}
-        >
+        <motion.header variants={parent} initial="hidden" whileInView="visible">
           <h4 className={styles.title}>inovações</h4>
           <h1 className={styles.headline}>
             O mundo do pão de queijo fora da caixinha
@@ -33,7 +28,6 @@ export function Innovations() {
           variants={parent}
           initial="hidden"
           whileInView="visible"
-          onReset={true}
         >
           <p className={styles.paragraph}>
             Imagine um mundo mágico do pão de queijo, onde você poderia se
@@ -48,7 +42,6 @@ export function Innovations() {
           variants={parent}
           initial="hidden"
           whileInView="visible"
-          onReset={true}
         >
           <li className={`${styles.imageContainer} col-4`}>
             <span className={styles.imageTitle}>Coxinha de frango</span>
@@ -81,7 +74,6 @@ export function Innovations() {
           variants={parent}
           initial="hidden"
           whileInView="visible"
-          onReset={true}
         >
           <h2 className={styles.blink}>IMPORTANTE!!!</h2>
           <p className={styles.informationContent}>
