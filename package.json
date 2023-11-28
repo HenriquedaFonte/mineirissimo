@@ -14,6 +14,7 @@
     "critters": "^0.0.16",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "framer-motion": "^10.16.5",
     "next": "13.2.4",
     "nookies": "^2.5.2",
     "react": "18.2.0",

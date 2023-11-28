@@ -1,20 +1,39 @@
 import Image from "next/image";
 import { Swiper } from "swiper/react";
+import { motion } from "framer-motion";
 
 import ilustrationProducts from "../../assets/images/ilustration-products.png";
 import { ProductsCards } from "components/ProductsCard";
 
 import styles from "./products.module.scss";
 
+const parent = {
+  initial: { y: 100, opacity: 0 },
+  final: { y: 0, opacity: 1, transition: { duration: 1 } },
+};
+
 export function Products() {
   return (
-    <section className={styles.products} id="produtos">
+    <motion.section
+      className={styles.products}
+      id="produtos"
+      variants={parent}
+      initial="initial"
+      whileInView="final"
+      onReset={true}
+    >
       <h4 className={styles.title}>Produtos</h4>
       <h1 className={styles.headline}>
         Apresentamos alguns de nosso produtos mais vendidos
       </h1>
 
-      <div className={styles.presentation}>
+      <motion.div
+        className={styles.presentation}
+        variants={parent}
+        initial="initial"
+        whileInView="final"
+        onReset={true}
+      >
         <div className={styles.content}>
           <h3 className={styles.contentTitle}>
             Nossa principal estrela, o pão de queijo!
@@ -38,11 +57,18 @@ export function Products() {
             alt="Imagem com dois pães de queijos em cima de um prato"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <Swiper id="productList" className={styles.productList}>
-        <ProductsCards />
-      </Swiper>
-    </section>
+      <motion.div
+        variants={parent}
+        initial="initial"
+        whileInView="final"
+        onReset={true}
+      >
+        <Swiper id="productList" className={styles.productList}>
+          <ProductsCards />
+        </Swiper>
+      </motion.div>
+    </motion.section>
   );
 }
