@@ -1,37 +1,25 @@
 import Image from "next/image";
 import { Swiper } from "swiper/react";
-import { motion } from "framer-motion";
 
 import ilustrationProducts from "../../assets/images/ilustration-products.png";
 import { ProductsCards } from "components/ProductsCard";
+import { AnimatedElement } from "utils/animations";
 
 import styles from "./products.module.scss";
 
-const parent = {
-  hidden: { y: 100, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
-};
-
 export function Products() {
   return (
-    <motion.section
+    <AnimatedElement
+      element="section"
       className={styles.products}
       id="produtos"
-      variants={parent}
-      initial="hidden"
-      whileInView="visible"
     >
       <h4 className={styles.title}>Produtos</h4>
       <h1 className={styles.headline}>
         Apresentamos alguns de nosso produtos mais vendidos
       </h1>
 
-      <motion.div
-        className={styles.presentation}
-        variants={parent}
-        initial="hidden"
-        whileInView="visible"
-      >
+      <AnimatedElement element="div" className={styles.presentation}>
         <div className={styles.content}>
           <h3 className={styles.contentTitle}>
             Nossa principal estrela, o pão de queijo!
@@ -55,13 +43,13 @@ export function Products() {
             alt="Imagem com dois pães de queijos em cima de um prato"
           />
         </div>
-      </motion.div>
+      </AnimatedElement>
 
-      <motion.div variants={parent} initial="hidden" whileInView="visible">
+      <AnimatedElement element="div">
         <Swiper id="productList" className={styles.productList}>
           <ProductsCards />
         </Swiper>
-      </motion.div>
-    </motion.section>
+      </AnimatedElement>
+    </AnimatedElement>
   );
 }

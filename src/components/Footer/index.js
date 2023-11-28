@@ -1,5 +1,4 @@
 import styles from "./footer.module.scss";
-import { motion } from "framer-motion";
 
 import {
   IoLogoInstagram,
@@ -8,20 +7,11 @@ import {
 } from "react-icons/io5";
 
 import { InstagramFeed } from "components/InstagramFeed";
-
-const parent = {
-  hidden: { y: 100, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
-};
+import { AnimatedElement } from "utils/animations";
 
 export function Footer() {
   return (
-    <motion.footer
-      className={styles.footer}
-      variants={parent}
-      initial="hidden"
-      whileInView="visible"
-    >
+    <AnimatedElement element="footer" className={styles.footer}>
       <div className={styles.container}>
         <div className={`${styles.content} col-3`}>
           <header className={styles.instagram}>
@@ -33,6 +23,7 @@ export function Footer() {
               <a
                 target="_blank"
                 href="http://instagram.com/mineirissimo.recife"
+                rel="noopener noreferrer"
               >
                 <InstagramFeed />
               </a>
@@ -64,7 +55,7 @@ export function Footer() {
               <a
                 href="mailto:mineirissimoartesanal@gmail.com"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <IoMailOutline />
                 mineirissimoartesanal@gmail.com
@@ -79,6 +70,6 @@ export function Footer() {
       <div className={styles.contentRights}>
         <p>©2010 Mineirissimo. Todos os direitos reservados.</p>
       </div>
-    </motion.footer>
+    </AnimatedElement>
   );
 }

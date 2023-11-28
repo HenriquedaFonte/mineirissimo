@@ -1,48 +1,34 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 import coxinha from "../../assets/images/coxinha.png";
 import pizza from "../../assets/images/pizza.png";
 import crostata from "../../assets/images/crostata.png";
 
-import styles from "./innovations.module.scss";
+import { AnimatedElement } from "utils/animations";
 
-const parent = {
-  hidden: { y: 100, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
-};
+import styles from "./innovations.module.scss";
 
 export function Innovations() {
   return (
     <section className={styles.innovations} id="inovacoes">
       <div className={styles.container}>
-        <motion.header variants={parent} initial="hidden" whileInView="visible">
+        <AnimatedElement element="header">
           <h4 className={styles.title}>inovações</h4>
           <h1 className={styles.headline}>
             O mundo do pão de queijo fora da caixinha
           </h1>
-        </motion.header>
+        </AnimatedElement>
 
-        <motion.div
-          className={styles.content}
-          variants={parent}
-          initial="hidden"
-          whileInView="visible"
-        >
+        <AnimatedElement element="div" className={styles.content}>
           <p className={styles.paragraph}>
             Imagine um mundo mágico do pão de queijo, onde você poderia se
             deliciar com vários produtos com a base da massa de pão de queijo
             mais gostosa do Brasil. Conheça alguns produtos revolucionários
             criados pela mineiríssimo:
           </p>
-        </motion.div>
+        </AnimatedElement>
 
-        <motion.ul
-          className={styles.imagesGalery}
-          variants={parent}
-          initial="hidden"
-          whileInView="visible"
-        >
+        <AnimatedElement element="ul" className={styles.imagesGalery}>
           <li className={`${styles.imageContainer} col-4`}>
             <span className={styles.imageTitle}>Coxinha de frango</span>
             <Image
@@ -67,14 +53,9 @@ export function Innovations() {
               alt="Imagem de duas crostatas"
             />
           </li>
-        </motion.ul>
+        </AnimatedElement>
 
-        <motion.div
-          className={styles.information}
-          variants={parent}
-          initial="hidden"
-          whileInView="visible"
-        >
+        <AnimatedElement element="div" className={styles.information}>
           <h2 className={styles.blink}>IMPORTANTE!!!</h2>
           <p className={styles.informationContent}>
             Com o passar dos anos nos deparamos cada vez mais com um público
@@ -90,7 +71,7 @@ export function Innovations() {
             <span>garantimos não haver risco de contaminação cruzada</span>,
             tranquilizando assim até mesmo os celíacos mais graves.
           </p>
-        </motion.div>
+        </AnimatedElement>
       </div>
     </section>
   );
