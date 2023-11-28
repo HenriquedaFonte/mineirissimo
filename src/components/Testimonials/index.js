@@ -23,9 +23,16 @@ export function Testimonials() {
       <h4 className={styles.title}>depoimentos</h4>
       <h1 className={styles.headline}>Veja quem já passou por aqui</h1>
 
-      <Swiper className={styles.testimonialsList} id="testimonialsList">
-        <TestimonialsCards />
-      </Swiper>
+      <motion.div
+        variants={parent}
+        initial="hidden"
+        whileInView="visible"
+        onReset={true}
+      >
+        <Swiper className={styles.testimonialsList} id="testimonialsList">
+          <TestimonialsCards />
+        </Swiper>
+      </motion.div>
     </motion.section>
   );
 }
