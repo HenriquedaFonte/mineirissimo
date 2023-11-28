@@ -18,7 +18,6 @@ export function Events() {
       variants={parent}
       initial="hidden"
       whileInView="visible"
-      onReset={true}
     >
       <h4 className={styles.title}>eventos</h4>
       <h1 className={styles.headline}>Participações em eventos</h1>
@@ -27,7 +26,6 @@ export function Events() {
         variants={parent}
         initial="hidden"
         whileInView="visible"
-        onReset={true}
       >
         <div className={styles.imageContainer}>
           <Image
