@@ -1,4 +1,5 @@
 import styles from "./footer.module.scss";
+import { motion } from "framer-motion";
 
 import {
   IoLogoInstagram,
@@ -8,9 +9,20 @@ import {
 
 import { InstagramFeed } from "components/InstagramFeed";
 
+const parent = {
+  hidden: { y: 100, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+};
+
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <motion.footer
+      className={styles.footer}
+      variants={parent}
+      initial="hidden"
+      whileInView="visible"
+      onReset={true}
+    >
       <div className={styles.container}>
         <div className={`${styles.content} col-3`}>
           <header className={styles.instagram}>
@@ -68,6 +80,6 @@ export function Footer() {
       <div className={styles.contentRights}>
         <p>©2010 Mineirissimo. Todos os direitos reservados.</p>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
