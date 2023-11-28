@@ -8,8 +8,8 @@ import { ProductsCards } from "components/ProductsCard";
 import styles from "./products.module.scss";
 
 const parent = {
-  initial: { y: 100, opacity: 0 },
-  final: { y: 0, opacity: 1, transition: { duration: 1 } },
+  hidden: { y: 100, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
 };
 
 export function Products() {
@@ -18,8 +18,8 @@ export function Products() {
       className={styles.products}
       id="produtos"
       variants={parent}
-      initial="initial"
-      whileInView="final"
+      initial="hidden"
+      whileInView="visible"
       onReset={true}
     >
       <h4 className={styles.title}>Produtos</h4>
@@ -30,8 +30,8 @@ export function Products() {
       <motion.div
         className={styles.presentation}
         variants={parent}
-        initial="initial"
-        whileInView="final"
+        initial="hidden"
+        whileInView="visible"
         onReset={true}
       >
         <div className={styles.content}>
@@ -61,8 +61,8 @@ export function Products() {
 
       <motion.div
         variants={parent}
-        initial="initial"
-        whileInView="final"
+        initial="hidden"
+        whileInView="visible"
         onReset={true}
       >
         <Swiper id="productList" className={styles.productList}>
