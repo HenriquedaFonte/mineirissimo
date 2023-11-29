@@ -33,7 +33,7 @@ export function TestimonialsCards() {
               <span className={styles.quoteMarks}>&ldquo;</span>
               {testimonial.message}
             </p>
-            <cite className={styles.imageContainer}>{testimonial.name}</cite>
+            <cite className={styles.name}>{testimonial.name}</cite>
           </blockquote>
         </SwiperSlide>
       ))}

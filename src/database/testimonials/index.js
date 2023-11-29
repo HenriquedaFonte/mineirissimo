@@ -10,14 +10,14 @@ export const testimonialsData = [
     id: 1,
     name: "Carolina da Fonte",
     message:
-      "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineirissimo.",
+      "O melhor pão de queijo que comi na vida, sem falar na coxinha, maravilhosa, o lanche do fim de semana sempre tem Mineiríssimo.",
     img: userCarolImg,
   },
   {
     id: 2,
     name: "Marta Cavalcanti",
     message:
-      "A qualidade desses produtos é incomparável. Meu filho sempre leva de lanche para o colégio os pães de queijos, a coxinha e a pizza, amo!",
+      "A qualidade desses produtos é incomparável. Meu filho sempre leva de lanche para o colégio os pães de queijo, a coxinha e a pizza, amo!",
     img: userMartaImg,
   },
   {
@@ -36,16 +36,16 @@ export const testimonialsData = [
   },
   {
     id: 5,
-    name: "João Maia",
+    name: "Lorena Maia",
     message:
-      "Amo os produtos dessa loja! O pão de queijo é sensacional, a coxinha é incrível, e a pizza é a melhor que existe. Simplesmente perfeito!",
+      "Sou do Rio, mas sempre que vou a Recife tenho que passar aqui pra repor meu estoque! Levo no avião e consigo aproveitar um bom tempo esse gostinho!!!",
     img: userJoaoImg,
   },
   {
     id: 6,
     name: "Luis da Fonte",
     message:
-      "A variedade é incrível! Pão de queijo, coxinha, e a pizza... simplesmente espetaculares e ainda tem muitas outras coisas. Lugar top!",
+      "Pão de queijo mineiro excelente. Variedade no cardápio e opções de pizza de pão de queijo e crostata de pão de queijo.",
     img: userLuisImg,
   },
 ];
