@@ -33,14 +33,7 @@ export function TestimonialsCards() {
               <span className={styles.quoteMarks}>&ldquo;</span>
               {testimonial.message}
             </p>
-            <cite className={styles.imageContainer}>
-              <Image
-                className={styles.image}
-                src={testimonial.img}
-                alt="Foto de um uma pessoa em seu perfil de rede social"
-              />
-              {testimonial.name}
-            </cite>
+            <cite className={styles.name}>{testimonial.name}</cite>
           </blockquote>
         </SwiperSlide>
       ))}
