@@ -1,0 +1,44 @@
+@import "../../styles/partials/colors";
+
+.vapour {
+  position: absolute;
+
+  display: flex;
+  z-index: 1;
+  padding-left: 40px;
+  justify-content: left;
+}
+
+.vapour span {
+  position: relative;
+  bottom: 130px;
+  display: block;
+  
+  min-width: 13px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  animation: smoke 5s linear infinite;
+  opacity: 0;
+  filter: blur(9px);
+  animation-delay: calc(var(--v) * -0.5s);
+}
+
+@keyframes smoke {
+  0% {
+      transform: translateY(0) scaleX(1);
+      opacity: 0;
+  }
+  15% {
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-150px) scaleX(5);
+  }
+  95% {
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(-300px) scaleX(10);
+  }
+}
