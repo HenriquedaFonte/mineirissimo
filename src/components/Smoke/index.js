@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from "./smoke.module.scss";
 
 export function Smoke() {
