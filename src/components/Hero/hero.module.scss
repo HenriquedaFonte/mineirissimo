@@ -76,6 +76,7 @@
 }
 
 .imageContainer {
+  position: relative;
   width: 45%;
   height: 90%;
 }
@@ -83,6 +84,7 @@
 .image {
   width: 100%;
   height: 100%;
-
+  
   border-radius: 18px;
 }
+

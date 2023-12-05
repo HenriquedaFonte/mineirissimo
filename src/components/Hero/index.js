@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import ilustrationHero from "../../assets/images/ilustration-hero.png";
 import { PrimaryButton } from "components/Buttons";
+import { Smoke } from "components/Smoke";
 
 import { BsWhatsapp } from "react-icons/bs";
 
@@ -33,6 +34,7 @@ export function Hero() {
             alt="Imagem de uma sexta com pães de queijo"
             priority={true}
           />
+          <Smoke/>
         </div>
       </div>
     </section>
